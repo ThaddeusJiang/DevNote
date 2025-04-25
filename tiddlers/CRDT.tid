@@ -1,0 +1,10 @@
+created: 20250320063943126
+modified: 20250424101550357
+title: CRDT
+type: text/vnd.tiddlywiki
+
+CRDT (Conflict-free Replicated Data type)
+
+在 Real Time / Live application 中很关键，多人合作，同时更新，例如：google docs, Figma 等等
+
+https://crdt.tech/

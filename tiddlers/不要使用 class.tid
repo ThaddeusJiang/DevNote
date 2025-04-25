@@ -1,0 +1,10 @@
+created: 20250424093238726
+modified: 20250424093349870
+tags: [[JS Rules]]
+title: 不要使用 class
+type: text/vnd.tiddlywiki
+
+请思考一下 ES Modules 不够吗？
+
+如果你在 debug 时看到的 JS object 不是字面量对象，基本上就是过度封装了。
+

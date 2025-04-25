@@ -1,0 +1,31 @@
+created: 20250425073356498
+modified: 20250425081134716
+tags: 
+title: 我期待 client-server 通信就像函数调用（functions call）一样简单
+type: text/vnd.tiddlywiki
+
+
+不经思考地分离 client 和 server 造成了不必要的数据处理、同步，通信相关的开发工作。
+
+虽然 REST 是主流技术，但是我个人认为这是因为 Web 早期主要是数据展示为主造成的。随着 Web Application 越来越复杂，client-server 的交互越来越多，REST 虽然可以做到，但是不够简单，不够高效。
+
+
+
+!! JS 社区
+
+借助一些依赖，我们现在已经可以实现像函数调用一样的 client-server 通信了。
+
+client-to-server: 
+
+* tPRC
+
+server-to-client:
+
+* web app: 主要依赖 WebSocket
+** socket.io 是一个蛮主流的方案
+
+
+!! Elixir 社区
+
+Elixir Phoenix LiveView 可以轻松实现 client-server 通信
+

@@ -1,0 +1,7 @@
+created: 20250424092903902
+modified: 20250424092930578
+tags: [[CSS rules]]
+title: 不要采用 BEM CSS
+type: text/vnd.tiddlywiki
+
+不要采用 BEM CSS，请使用 utility-first CSS。

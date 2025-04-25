@@ -1,0 +1,7 @@
+created: 20250424093356443
+modified: 20250424093420765
+tags: [[JS Rules]]
+title: 不要 export default
+type: text/vnd.tiddlywiki
+
+同样也不需要额外定义 index.js 用于整理 export

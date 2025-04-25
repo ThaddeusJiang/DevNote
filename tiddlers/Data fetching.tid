@@ -1,0 +1,13 @@
+created: 20250318145350151
+modified: 20250424101244145
+tags: 
+title: Data fetching
+type: text/vnd.tiddlywiki
+
+
+# requst-response 模式：有请求，有响应。
+# http fetch (RESTful, GraphQL)
+# SSR: data fetching in server-side
+# Sync, subscribe, useLive 等
+#* 代表： [[electric-sql]] [[RxDB]] [[Dexie.js]]
+#* React hooks useSyncExternalStore

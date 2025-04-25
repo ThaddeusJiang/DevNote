@@ -1,0 +1,17 @@
+created: 20250424065436047
+modified: 20250424070052164
+tags: TechRadar/暂缓
+title: CSS-in-JS
+type: text/vnd.tiddlywiki
+
+我不使用 CSS-in-JS
+
+根据我的经验，CSS-in-JS 有如下 Issues
+
+# 无法快速定位源码。
+# 编写困难。CSS-in-JS 是用 JS 风格编写 CSS，大小写转换很烦。
+# 依赖额外工具。维护工具也是成本。
+
+其实最最重要的问题是徒增代码量，我没有办法和纸上谈兵的人解释，但是如果真的写过 CSS-in-JS 项目的人一定懂 CSS-in-JS 编写的代码量是 tailwindcss 的 10倍以上。
+如果你反对，show me your code. 让我们一起看看你的代码，用事实说话。
+

@@ -1,0 +1,13 @@
+created: 20250425074853130
+modified: 20250425075128229
+tags: 
+title: LiveView 可以使用 JS commands 调用 server
+type: text/vnd.tiddlywiki
+
+```diff
+- <div phx-click="inc" phx-value-myvar1="val1" phx-value-myvar2="val2">
++ <div phx-click={JS.push("inc", value: %{myvar1: @val1})}>
+def handle_event("inc", %{"myvar1" => "val1", "myvar2" => "val2"}, socket) do
+```
+
+JS.push 优点：params 容易编写

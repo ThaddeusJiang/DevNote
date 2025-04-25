@@ -1,0 +1,9 @@
+created: 20250425072117032
+modified: 20250425072250314
+tags: 
+title: Browser-server Model
+type: text/vnd.tiddlywiki
+
+BS 架构本质上也是一种 CS 架构，区别在于 Browser-server Model 不要求客户安装软件，可以通过 URL 访问应用。
+
+> 但是这种区别并不明显，没有必要过分区分。

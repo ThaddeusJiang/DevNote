@@ -1,37 +1,18 @@
 created: 20230221001904248
 creator: TJ
-modified: 20230228055539411
+modified: 20250425071411195
 modifier: TJ
 tags: 
 title: Welcome
 type: text/vnd.tiddlywiki
 
-Hi，I am TJ(ThaddeusJiang).
+👋 嗨，我是 TJ (thaddeus jiang)
 
-这是我的开发笔记，
+欢迎来到我的 dev-notes，我的出发点是能像 [[Xuanwo's Note|https://note.xuanwo.io/#/page/Contents]] 一样分享一些笔记。
 
-* 查看本站的源代码 [[ThaddeusJiang/dev-note|https://github.com/ThaddeusJiang/dev-note]]，欢迎 Star 本项目以示支持
-* 发现错误请在 Issues 提交反馈
-* 探讨问题请在 Discussions 开启讨论
-* 链接如果失效请尝试使用 `Shift + ^ + A` 来搜索关键词
+本笔记使用 [[TiddlyWiki|https://tiddlywiki.com/]] 构建，查看本站的源代码 https://github.com/ThaddeusJiang/dev-notes ，欢迎 Star 一下以示支持。
 
-涉及
+* 发现错误，请在 Issues 提交反馈
+* 探讨问题，请在 Discussions 开启讨论
+* 链接 404，请使用 `Shift + ^ + A` 全文检索
 
-* <<tag TiddlyWiki>>
-* Frontend
-* Backend
-* DevOps
-* OSS
-* JS/TS
-* Elixir
-* Clojure
-
-其他链接
-
-* 博客 [[ThaddeusJiang's Blog|https://thaddeusjiang.com]]
-* 工作 [[ThaddeusJiang's Work]] `TODO:`
-* 代码 [[ThaddeusJiang's GitHub|https://github.com/ThaddeusJiang]]
-* 周报 [[ThaddeusJiang's Newsletter]] `TODO:`
-
-
-出发点是像 [[Xuanwo's Note|https://note.xuanwo.io/#/page/Contents]] 一样分享，使用 [[TiddlyWiki|https://tiddlywiki.com/]] 构建。

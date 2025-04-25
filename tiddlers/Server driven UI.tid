@@ -1,0 +1,27 @@
+created: 20221107004431021
+modified: 20250425081037897
+title: Server Driven UI
+type: text/vnd.tiddlywiki
+
+
+Server Driven UI 特点： client-side 被动接受来自服务器的信息（[[Server-sent events]]）并更新 UI。
+
+为什么我关注 Server Driven UI？
+
+# [[我期待 client-server 通信就像函数调用（functions call）一样简单]]
+# 很多应用的状态需要依赖 server ，例如：server jobs progress，在线人数，数据自动更新等等。
+
+
+
+
+
+
+我发现目前主流的框架过分依赖 client 发送请求到 server 了，如 remix.run 和 next.js 之类的 framework 打开一个页面会发送大量请求。向 server 提交一个请求，需要触发海量请求用于同步 server and client 状态。很不合理。
+
+JS 生态中 socket.io 可以实现 Server-driven UI，Elixir 生态中 Phoenix LiveView 可以。
+
+JS 社区
+
+* 使用 GraphLQ subscription 可以订阅一些数据
+* socket.io 可以订阅 Server-sent Events
+* ws 好像也挺主流的

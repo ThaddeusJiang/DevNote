@@ -1,0 +1,14 @@
+created: 20250318144644438
+modified: 20250424094111383
+tags: TJ_style
+title: 基于 URL 的状态管理
+type: text/vnd.tiddlywiki
+
+> 符合我的思维模式
+
+我认为 web app 非常适合在 URL 中进行状态管理，优点：
+
+# 任何状态都可以对外分享（share URL）
+# 使用 URL 进行 state management 是框架自由 （frameworkless），不论 React Vue Svelte 都是一样的，非常 nice
+
+

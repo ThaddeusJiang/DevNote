@@ -1,0 +1,14 @@
+created: 20250424092514679
+modified: 20250424092835373
+tags: 
+title: 心智负担
+type: text/vnd.tiddlywiki
+
+
+编码中增加心智负担的内容
+
+# 继承，多继承和多次继承都会增加心智负担。
+# 嵌套，BEM CSS 是增加心智负担。
+# codegen 尤其是 codegen TypeScript 包含太多工程化的代码，完全不可读，心智负担。
+
+

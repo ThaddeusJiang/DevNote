@@ -1,0 +1,27 @@
+created: 20250424094457717
+modified: 20250424095659120
+tags: 
+title: svelte store
+type: text/vnd.tiddlywiki
+
+```js
+// shared.js
+import { writable } from "svelte/store"
+
+export let count = writable(0)
+```
+
+```jsx
+// Counter.svelte
+<script>
+	import { count } from './shared.js';
+</script>
+
+<button onclick={() => $count += 1}>
+	clicks: {$count}
+</button>
+```
+
+这时 `$count` 是全局同步的
+
+https://svelte.dev/docs/svelte/svelte-store

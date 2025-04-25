@@ -1,0 +1,10 @@
+created: 20250424092128612
+modified: 20250424092335299
+tags: deprecated
+title: BEM CSS
+type: text/vnd.tiddlywiki
+
+> 不建议采用 BEM CSS，请使用 utility-first CSS
+
+
+https://getbem.com/

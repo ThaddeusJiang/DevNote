@@ -1,0 +1,32 @@
+created: 20250424095042671
+modified: 20250424095629071
+tags: 
+title: jotai example
+type: text/vnd.tiddlywiki
+
+
+```js
+import { atom } from 'jotai'
+
+export const countAtom = atom(0)
+```
+
+```js
+import { useAtom } from 'jotai'
+import { countAtom } from './atoms'
+
+const [count, setCount] = useAtom(countAtom)
+```
+
+```js
+import { useAtomValue, useSetAtom } from 'jotai'
+import { countAtom } from './atoms'
+
+const anime = useAtomValue(countAtom)
+
+const setAnime = useSetAtom(countAtom)
+```
+
+countAtom 有点类似 React Context，且更简单，jotai 只需要包裹一次 Provider，不需要逐个添加 Provider，不会形成 Provider 嵌套地狱。
+
+[[jotai]]

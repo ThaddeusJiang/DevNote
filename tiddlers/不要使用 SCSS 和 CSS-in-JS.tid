@@ -1,0 +1,7 @@
+created: 20250424092953027
+modified: 20250424093050138
+tags: [[CSS rules]]
+title: 不要使用 SCSS 和 CSS-in-JS
+type: text/vnd.tiddlywiki
+
+推荐使用 CSS，可以用简单的工具增强一下，例如 PostCSS。不要过度使用工具，SCSS 就是典型过度使用。

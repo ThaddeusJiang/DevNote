@@ -1,0 +1,49 @@
+created: 20250318142601035
+modified: 20250424101038965
+tags: 
+title: React state management
+type: text/vnd.tiddlywiki
+
+
+React state management 是被错误认为的 React 最难的地方之一，很多团队喜欢在技术面试环节提问 state management。
+
+展开讲可以讲很多内容。
+
+不过大家应该明确区分下面几种级别的 state management
+
+# UI 级别
+# App 级别
+
+技术实现上也挺简单的
+
+React API:
+
+# 简单的 UI : `props, state`
+# 复杂的 UI : `Context`
+
+Libraries:
+
+# jotai 
+# ReactQuery 
+# ~~redux~~ 还问 redux 的团队，千万不要加入。
+
+我不推荐使用 ReactQuery setQeuryData 管理全部的状态，但是如读写 localStorage, Cookie 等数据，React Query 似乎是一个不错的选择，可以很优雅的 Error Handling 。
+
+JSON.parse 似乎也可以用 react-query 封装一下。我忘记实现了，TODO:
+
+
+jotai atomWithStorage 处理 localStorage 更优雅的，强烈推荐。
+
+!! 其他
+
+# 最最基础的：提取 state + 反向数据流 (aka. 将 setState 传递到 children)
+#* 问题：传递地狱，传递超过 3层就有点烦了（最好事不过三
+# 减少传递地狱：可以使用 Context。（第一次感受到 Context 的威力是 [[unstated]]
+# 基于 URL query string 状态的管理
+#* 即使不安装依赖也可以直接 router.queryString + router.push
+#* 2025-03-18 发现了 [[nuqs]]
+# offline-first 的 state management: [[jotai]] withStorage
+
+refs:
+* https://github.com/tanstack/query
+* https://jotai.org/docs/utils/atom-with-storage

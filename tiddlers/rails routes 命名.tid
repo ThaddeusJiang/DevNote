@@ -1,0 +1,15 @@
+created: 20250421082112680
+modified: 20250421082219882
+tags: 
+title: rails routes 命名
+type: text/vnd.tiddlywiki
+
+
+* index
+* new
+* create
+* detail
+* edit
+* update 
+* delete
+

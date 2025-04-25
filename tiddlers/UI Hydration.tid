@@ -1,0 +1,8 @@
+created: 20250224031951005
+modified: 20250424101903879
+tags: 
+title: UI Hydration
+type: text/vnd.tiddlywiki
+
+
+imo: Hydration 是 React + SSR 的无奈方案，不用 React 或者不用 SSR 的话，就可以不考虑 Hydration 了。

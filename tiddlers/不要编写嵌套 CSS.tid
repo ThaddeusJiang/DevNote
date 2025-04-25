@@ -1,0 +1,26 @@
+created: 20250424091820420
+modified: 20250424092852149
+tags: [[CSS rules]]
+title: 不要编写嵌套 CSS
+type: text/vnd.tiddlywiki
+
+
+```css
+.calendar {
+    border: none;
+    font-family: 'Cardo', serif;
+
+    &__tile {
+      border: solid 1px #fff;
+      background-color: #ececec;
+
+      &--active {
+        color: #000;
+      }
+    }
+}
+```
+
+上面 CSS 代码在大型项目中难以维护，增加心智负担。
+
+不要采用 BEM CSS，请使用 utility-first CSS。

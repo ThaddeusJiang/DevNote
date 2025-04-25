@@ -1,0 +1,60 @@
+created: 20250425072742777
+modified: 20250425080042409
+tags: 
+title: LiveView 的 client-server 通信简单且有效
+type: text/vnd.tiddlywiki
+
+
+!! client-to-server
+
+方案1: 最简单的方式 `phx-`
+
+```elixir
+# client
+<div phx-click="inc" phx-value-myvar1="val1" phx-value-myvar2="val2">
+
+# server
+def handle_event("inc", %{"myvar1" => "val1", "myvar2" => "val2"}, socket) do
+  ..
+end
+```
+
+方案1: LiveView Hooks `pushEvent`
+
+```js
+// client
+this.pushEvent("load-more", { page })
+
+// server
+def handle_event("load-more", %{"page" => page}, socket) do
+```
+
+!! server-to-client
+
+方案1: window.addEventListener 订阅 `phx:` 事件
+
+```elixir
+// server
+push_event(socket, "highlight", %{id: ...})}
+
+// client
+window.addEventListener("phx:highlight", (e) => {
+
+// e.detail 可以获取参数
+```
+
+方案2： Hooks `handleEvent`
+
+```elixir
+// server
+push_event(socket, "points", %{points: new_points})
+
+//client
+<div id="chart" phx-hook="Chart">
+
+Hooks.Chart = {
+  mounted(){
+    this.handleEvent("points", ({points}) => ...)
+  }
+}
+```

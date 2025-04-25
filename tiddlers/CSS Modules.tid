@@ -1,0 +1,16 @@
+created: 20250424064515493
+modified: 20250424103340724
+tags: TechRadar/暂缓
+title: CSS Modules
+type: text/vnd.tiddlywiki
+
+我不使用 CSS Modules。
+
+因为我的经验告诉我一个系统中大部分 UI 都是类似的，使用 global CSS 可以极大减少重复代码，并且 CSS 全局污染的问题也完全可以通过 unique classname 解决。
+
+并且我认为 CSS Modules 有如下几个 Issues
+
+# classname 不可读，无法快速定位到源码。
+# 随着 UI 越来越多，CSS 会膨胀，造成不必要的 network 浪费。相比之下 tailwindcss 风格的 utility-first CSS 不会造成 CSS 膨胀。
+# 需要额外工具支持。维护 CSS Modules 的工具链也是成本，产生不必要的技术债。
+

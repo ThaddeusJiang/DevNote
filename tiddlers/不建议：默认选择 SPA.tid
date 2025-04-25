@@ -1,0 +1,19 @@
+created: 20221107004431032
+modified: 20250425082718601
+title: 不建议：默认选择 SPA
+type: text/vnd.tiddlywiki
+
+
+* SPA: single page application
+* MPA: multiple page application
+
+
+只有单一功能的应用可以继续使用 SPA 架构，例如 Excalidraw。对于复杂业务的应用不建议默认采用 SPA。
+
+JS 和 Browser 都发展了，目前主流的 MPA framework 也可以提供像 SPA 一样的无页面刷新的用户体验了。MPA 更容易扩展，更容易应付复杂的大型应用。
+
+LiveView 是 Elixir 社区的解决方案，很酷。
+
+Hotwire 是 Ruby 社区的方案。
+
+JS 社区 Remix.run 和 Next.js 倡导的 SSR 本质上也是一种 MPA
