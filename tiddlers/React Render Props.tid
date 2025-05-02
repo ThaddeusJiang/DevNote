@@ -1,0 +1,20 @@
+created: 20250425100504364
+modified: 20250425100832389
+title: React Render Props
+type: text/vnd.tiddlywiki
+
+> 很讨厌 React 新文档中移除了这些非常有用的概念。
+
+https://legacy.reactjs.org/docs/render-props.html
+
+```js
+function Mouse({ children }) {
+  return children(mouse)
+}
+
+<Mouse>
+  {mouse => (
+    <p>The mouse position is {mouse.x}, {mouse.y}</p>
+  )}
+</Mouse>
+```

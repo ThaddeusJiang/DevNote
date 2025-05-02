@@ -1,0 +1,11 @@
+created: 20230325050235024
+modified: 20250425091324612
+tags: TechRadar/采纳
+title: wretch
+type: text/vnd.tiddlywiki
+
+> 2024-09-18 开始使用
+
+可以简化 fetch 的 error handling 以及 loading state 等
+
+https://github.com/elbywan/wretch

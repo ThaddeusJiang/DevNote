@@ -1,13 +1,27 @@
 created: 20250320045423968
-modified: 20250320053559236
+modified: 20250501015416125
 tags: 
 title: 2025 frontend 个人思考
 type: text/vnd.tiddlywiki
 
 
+我认为需要更新自己的思维模式了。
+
+在 frontend 领域，我是 React 使用者，目前采用 React 的思维模式。
+
+我理解的 React 思维模式和其他的思维模式有哪些不同？
+
+> 主流的 React Vue Svelte 似乎也没有明显的不同，都差不多。
+
+# React Hooks 的 render 机制，react `re-render` 时 Components 和 Hooks 都是普通函数，没有生命周期的概念，没有 mounted, unmounted 的概念。Class Components 时代有生命周期，但是 Hook Components 时代没有了。如果有人还说有，那我只能🤷
+# React 本质上是 `自上而下` 的形式进行数据传递，所以才会出现传递地狱（props drilling）。虽然 Context 可以缓解传递地狱，但是还是自上而下，需要在最外层定义一层。[[JS Signals]] 似乎解决这个问题，保持关注。
+
+其实有生命周期的也挺好，可以减少不必要的运算。Svelte 就是 the component run once 然后通过 fine-grained 更新 UI。简单实例中效果不错，不知道大项目中效果如何。
+
+
 根据技术栈区分
 
-# JS 社区
+# JS 社区: [[等待 React 的 jQuery 时刻]]
 # Elixir 社区
 # Native
 
@@ -69,8 +83,4 @@ const theme = inject('theme')
 
 !! Elixir 社区
 !! Native
-
-
-
-
 

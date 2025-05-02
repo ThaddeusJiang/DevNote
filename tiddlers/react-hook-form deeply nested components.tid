@@ -1,0 +1,40 @@
+created: 20250425095848319
+modified: 20250425100858279
+tags: TJ_edu
+title: react-hook-form deeply nested components
+type: text/vnd.tiddlywiki
+
+
+* useForm
+* FormProvider
+* useFormContext
+* [[React Render Props]]
+
+```js
+import { FormProvider, useForm, useFormContext } from "react-hook-form"
+
+export const App = () => {
+  const methods = useForm()
+
+  return (
+    <FormProvider {...methods}>
+      <form>
+        <DeepNest />
+      </form>
+    </FormProvider>
+  )
+}
+
+export const ConnectForm = ({ children }) => {
+  const methods = useFormContext()
+
+  return children(methods)
+}
+
+export const DeepNest = () => (
+  <ConnectForm>
+    {({ register }) => <input {...register("deepNestedInput")} />}
+  </ConnectForm>
+)
+
+```

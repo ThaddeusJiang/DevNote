@@ -1,0 +1,14 @@
+created: 20250425094822409
+modified: 20250425095528167
+tags: 
+title: UI: state management
+type: text/vnd.tiddlywiki
+
+React: props, state, context, jotai
+
+* props, state 没有隐式传递，代码量多，但明确。
+* context, jotai 可以隐式传递，代码量少，我个人没有遇到因为隐式传递导致代码难以理解的问题。复杂应用推荐 jotai
+
+svelte: store
+
+Preact, solid: Signals 

@@ -1,0 +1,44 @@
+created: 20250501024534541
+modified: 20250501025004240
+tags: 
+title: GraphQL Tips: 不使用 .graphql 文件
+type: text/vnd.tiddlywiki
+
+
+我的经验：直接在 GraphQL 被调用的文件中编写 graphql 更好
+
+在 js/ts 项目中引入 .graphql 文件需要额外配置，且 editor 通常不能自动补全。不如直接使用 string 编写 graphql，代码如下：
+
+```js
+const allFilmsWithVariablesQueryDocument = graphql(/* GraphQL */ `
+  query allFilmsWithVariablesQuery($first: Int!) {
+    allFilms(first: $first) {
+      edges {
+        node {
+          ...FilmItem
+        }
+      }
+    }
+  }
+`);
+
+function App() {
+  // `data` is typed!
+  const [{ data }] = useQuery({
+    query: allFilmsWithVariablesQueryDocument,
+    variables: { first: 10 },
+  });
+  return (
+    <div className="App">
+      {data && (
+        <ul>
+          {data.allFilms?.edges?.map(
+            (e, i) => e?.node && <Film film={e?.node} key={`film-${i}`} />
+          )}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+```

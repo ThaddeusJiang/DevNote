@@ -1,0 +1,12 @@
+created: 20250430083110530
+modified: 20250430083507298
+tags: 
+title: react-nl2br
+type: text/vnd.tiddlywiki
+
+
+我不明白为什么 React 开发者需要 install 这个 react-nl2br，困惑😖。
+
+它似乎很简单，并且用处不大。为什么 React developers 需要安装它，而不是自己维护呢？
+
+https://github.com/yosuke-furukawa/react-nl2br/blob/master/index.js

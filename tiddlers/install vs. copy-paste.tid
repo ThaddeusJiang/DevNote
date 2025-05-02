@@ -1,0 +1,9 @@
+created: 20250430083518646
+modified: 20250430083739637
+tags: 
+title: install vs. copy-paste
+type: text/vnd.tiddlywiki
+
+
+* 开箱即用，不需要修改默认行为的代码：install，例如：dayjs, immer, lodash
+* 需要修改默认行为的代码：copy-paste，例如：UI components

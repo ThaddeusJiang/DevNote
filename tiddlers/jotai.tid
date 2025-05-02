@@ -1,10 +1,12 @@
 created: 20250318145116464
-modified: 20250424095645320
-tags: 
+modified: 20250425095756987
+tags: TechRadar/采纳
 title: jotai
 type: text/vnd.tiddlywiki
 
-可以像 Signal 一样进行 state management。Svelte 中 store 也是概念。
+> 复杂应用，我必用 jotai ，极大精简代码量，超爱。
+
+可以像 Signals 一样进行 state management。
 
 而且提供开箱即用的 Storage 同步的状态管理库， https://jotai.org/docs/utilities/storage
 
@@ -12,8 +14,8 @@ type: text/vnd.tiddlywiki
 * 避免用户因 application 崩溃而丢失进度的沮丧
 * 实现类似自动保存的 features
 
----
+Svelte 中 store 也是概念。
 
-推荐查看
+refs
 
-* [[svelte store]]
+* [[Preact: Signals]]

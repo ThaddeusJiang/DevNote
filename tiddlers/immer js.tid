@@ -1,0 +1,11 @@
+created: 20210622082158418
+creator: TJ
+modified: 20250425091523194
+modifier: ThaddeusJiang
+tags: TechRadar TechRadar/语言&框架 TechRadar/采纳
+title: immer js
+type: text/vnd.tiddlywiki
+
+immer js 在处理复杂的 js object 时比简单的 `...` 好用
+
+ https://github.com/immerjs/immer

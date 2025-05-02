@@ -1,10 +1,14 @@
 created: 20250318143354004
-modified: 20250424101119721
+modified: 20250425091141312
 tags: 
 title: unstated
 type: text/vnd.tiddlywiki
 
 基于 Context 的状态管理库。
+
+why?
+
+A: 减少 props 传递地狱。
 
 我在 2018年前后使用过，非常优秀，让我真正的理解了 React 的 state management ，感谢它。
 

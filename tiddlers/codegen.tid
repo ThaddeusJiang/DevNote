@@ -1,0 +1,8 @@
+created: 20250501064907906
+modified: 20250501065142500
+tags: 
+title: codegen
+type: text/vnd.tiddlywiki
+
+
+如果可以，应该尽量避免使用 codegen。虽然不是 codegen 的问题，但是我的经验是大多数使用 codegen 的项目中，TypeScript 代码都很奇怪，不符合直觉，过度面向对象化，层层封装，各种范型，代码可读性很差。

@@ -1,0 +1,43 @@
+created: 20250430030749075
+modified: 20250430032220513
+tags: 
+title: graphql urql TypeScript
+type: text/vnd.tiddlywiki
+
+
+```ts
+import { FragmentType, useFragment } from './gql/fragment-masking';
+import { graphql } from '../src/gql';
+
+// again, we use the generated `graphql()` function to write GraphQL documents 👀
+export const FilmFragment = graphql(/* GraphQL */ `
+  fragment FilmItem on Film {
+    id
+    title
+    releaseDate
+    producers
+  }
+`);
+
+const Film = ({ film }: {
+  // `film` property has the correct type 🎉
+  film: FragmentType<typeof FilmFragment>;
+}) => {
+  // `film` is of type `FilmFragment`, with no extraneous properties ⚡️
+  const film = useFragment(FilmFragment, film);
+  return (
+    <div>
+      <h3>{film.title}</h3>
+      <p>{film.releaseDate}</p>
+    </div>
+  );
+};
+
+export default Film;
+```
+
+!! 👍
+
+```
+film.title
+```

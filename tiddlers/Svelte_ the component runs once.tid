@@ -1,0 +1,10 @@
+created: 20250425094122683
+modified: 20250425094757220
+tags: 
+title: Svelte: the component runs once
+type: text/vnd.tiddlywiki
+
+
+[img[https://i.gyazo.com/f5d56e5d295717984d1412f075558070.png]]
+
+https://svelte.dev/tutorial/svelte/keyed-each-blocks#:~:text=Svelte%20works%20differently:%20the%20component%20‘runs’%20once%2C%20and%20subsequent%20updates%20are%20‘fine%2Dgrained’.

@@ -1,0 +1,46 @@
+created: 20250430030602336
+modified: 20250430032036872
+tags: 
+title: graphql apollo-client TypeScript
+type: text/vnd.tiddlywiki
+
+
+
+```ts
+import type { FragmentType } from "@apollo/client";
+import type { PostDetailsFragment } from "./path/to/gql/types.ts";
+
+export const POST_DETAILS_FRAGMENT: TypedDocumentNode<
+  PostDetailsFragment
+> = gql`
+  fragment PostDetailsFragment on Post {
+    title
+    shortDescription
+  }
+`;
+
+interface PostDetailsProps {
+  post: FragmentType<PostDetailsFragment>
+}
+
+function PostDetails({ post }: PostDetailsProps) {
+  const { data } = useFragment({
+    fragment: POST_DETAILS_FRAGMENT,
+    from: post,
+  });
+
+  // ...
+}
+```
+
+!! 🤔 为什么从 post 到 data 不是 plain object?
+
+期待的方法
+
+```
+post.title
+```
+
+
+
+https://www.apollographql.com/docs/react/data/fragments#using-with-fragments

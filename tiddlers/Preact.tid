@@ -1,0 +1,9 @@
+created: 20250425095138096
+modified: 20250425095251328
+tags: 
+title: Preact
+type: text/vnd.tiddlywiki
+
+最开始是“轻量的”React替代方案，但是现在提供比 React 更先进的功能，例如 Signals。 
+
+https://preactjs.com/guide/v10/signals/

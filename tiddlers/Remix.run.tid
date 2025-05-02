@@ -1,0 +1,14 @@
+created: 20241111042653834
+modified: 20250501014938827
+tags: TechRadar/语言和框架
+title: Remix.run
+type: text/vnd.tiddlywiki
+
+
+问题：
+
+# 请求混乱、重复请求
+# Remix loader action 和 React 19 推荐的 ServerComponents ServerFunctions 不一致，会造成不必要的心智负担。
+
+打开 browser devtool network 就明白。
+
