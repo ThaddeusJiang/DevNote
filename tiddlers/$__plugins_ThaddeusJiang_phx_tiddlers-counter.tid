@@ -1,6 +1,6 @@
 created: 20220302002824184
 creator: TJ
-modified: 20230228072450670
+modified: 20250502094533540
 modifier: TJ
 tags: $:/tags/ViewTemplate CustomTiddlers 学习笔记
 title: $:/plugins/ThaddeusJiang/phx/tiddlers-counter
@@ -8,6 +8,7 @@ type: text/vnd.tiddlywiki
 
 
 <footer>
+
 <strong><$text text={{$:/SiteTitle}} /></strong> has <strong><$count filter="[!is[system]]"/></strong> tiddlers.
 
 </footer>

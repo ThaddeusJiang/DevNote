@@ -1,0 +1,15 @@
+created: 20250502100129252
+modified: 20250502101700233
+tags: 
+title: TiddlyWiki 检查特定 tag 并显示 your-tiddler
+type: text/vnd.tiddlywiki
+
+使用 `<$list filter="[all[current]tag[?]]"` 过滤
+
+```
+<!-- 检查特定标签并显示特殊 UI -->
+<$list filter="[all[current]tag[SpecialTag]]">
+  <$transclude tiddler="$:/custom/ui/SpecialUITemplate"/>
+</$list>
+```
+

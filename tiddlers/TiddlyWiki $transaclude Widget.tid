@@ -1,0 +1,13 @@
+created: 20250502100442976
+modified: 20250502101011618
+tags: 
+title: TiddlyWiki $transaclude Widget
+type: text/vnd.tiddlywiki
+
+transaclude 嵌入
+
+```
+<$transclude tiddler="Welcome" />
+```
+
+[img[transclude.png]]

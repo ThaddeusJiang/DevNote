@@ -1,0 +1,14 @@
+created: 20250502101508732
+modified: 20250502101534540
+tags: 
+title: TiddlyWiki Macro Example
+type: text/vnd.tiddlywiki
+
+
+```js
+\define myMacro(text)
+<b>$text$</b>
+\end
+<<myMacro "Hello">>
+
+```
