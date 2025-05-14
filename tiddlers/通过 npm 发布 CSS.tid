@@ -1,0 +1,31 @@
+created: 20250514034103112
+modified: 20250514034750613
+tags: TIL
+title: 通过 npm 发布 CSS
+type: text/vnd.tiddlywiki
+
+
+TIL: package.json 中配置 `style` ，在 .css 中 `@import 'your-pkg'` 自动导入 css。
+
+```json
+  "main": "destyle.css",
+  "style": "destyle.css",
+```
+
+在 css 中会自动导入 style
+
+```css
+/* .css */
+@import "destyle.css"
+```
+
+在 js 中会自动导入 main
+
+```js
+// .js
+import "destyle.css"
+```
+
+refs:
+
+* https://github.com/nicolas-cusan/destyle.css/blob/master/package.json#L5-L6
