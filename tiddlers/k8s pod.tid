@@ -1,0 +1,10 @@
+created: 20250514051201144
+modified: 20250514051243943
+tags: 
+title: k8s pod
+type: text/vnd.tiddlywiki
+
+
+A Pod is a wrapper around one or more containers.
+
+[img[https://learnk8s.io/a/98b37e373dd06f6b84aa20abd3c9658b.svg]]
