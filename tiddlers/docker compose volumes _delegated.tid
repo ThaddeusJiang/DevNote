@@ -1,0 +1,10 @@
+created: 20250513091715612
+modified: 20250513092113372
+tags: 
+title: docker compose volumes :delegated
+type: text/vnd.tiddlywiki
+
+
+
+`:delegated` 优先保证 container 中文件是最新的。aka: 优先 local -> container
+

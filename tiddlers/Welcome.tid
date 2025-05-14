@@ -1,6 +1,6 @@
 created: 20230221001904248
 creator: TJ
-modified: 20250502092649060
+modified: 20250513093844363
 modifier: TJ
 tags: 
 title: Welcome
@@ -14,5 +14,5 @@ type: text/vnd.tiddlywiki
 
 * 发现错误，请在 Issues 提交反馈
 * 探讨问题，请在 Discussions 开启讨论
-* 链接 404，请使用 `Shift + ^ + A` 全文检索
+* 链接 404，请使用 `Shift + ^ + A` 检索
 

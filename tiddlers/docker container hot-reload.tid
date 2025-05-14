@@ -1,0 +1,25 @@
+created: 20250513091412816
+modified: 20250513093638671
+tags: 
+title: docker container hot-reload
+type: text/vnd.tiddlywiki
+
+docker container 没有 hot-reload 但是可以同步 local 的文件，container 中如果有类似 watchman 的工具，就可以实现 local and container 的 hot-reload。
+
+
+```yml
+# Dockerfile
+
+WORKDIR /app
+```
+
+```yaml
+# docker-compose.yml
+
+services:
+  app:
+    build: .
+    command: rails s -p 8000
+    volumes:
+      .:/app:delegated
+```

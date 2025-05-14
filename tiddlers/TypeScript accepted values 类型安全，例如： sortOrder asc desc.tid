@@ -1,0 +1,25 @@
+created: 20250507035931170
+modified: 20250507041705491
+tags: 
+title: TypeScript accepted values 类型安全，例如： sortOrder asc desc
+type: text/vnd.tiddlywiki
+
+
+
+```ts
+const sortOrder = {
+  asc: 'asc',
+  desc: 'desc',
+} as const;
+
+type SortOrder = (typeof sortOrder)[keyof typeof sortOrder]; // 'asc' | 'desc'
+
+// 现在可以这样访问：
+sortOrder.asc; // 'asc'
+```
+
+```ts
+const sortOrder = ['asc', 'desc'] as const
+
+type SortOrder = (typeof sortOrder)[number] // 'asc' | 'desc'
+```

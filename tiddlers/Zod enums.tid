@@ -1,0 +1,41 @@
+created: 20250507041632453
+modified: 20250507042534743
+tags: TJ_edu
+title: Zod enums
+type: text/vnd.tiddlywiki
+
+我认为 Zod enums 是 TypeScript 项目中实现 enums 最优雅的方式，type 字面量、value 字面量、options 字面量，太棒了。
+
+```
+* [] as const
+* z.enum()
+* z.infer<typeof schema>
+* schema.enum.
+* schema.options
+```
+
+```ts
+const VALUES = ["Salmon", "Tuna", "Trout"] as const;
+const FishEnum = z.enum(VALUES);
+
+type FishEnum = z.infer<typeof FishEnum>;
+// 'Salmon' | 'Tuna' | 'Trout'
+
+FishEnum.enum.Salmon; // => autocompletes
+
+FishEnum.enum;
+/*
+=> {
+  Salmon: "Salmon",
+  Tuna: "Tuna",
+  Trout: "Trout",
+}
+*/
+
+FishEnum.options; // ["Salmon", "Tuna", "Trout"];
+
+```
+
+
+
+https://zod.dev/?id=zod-enums
