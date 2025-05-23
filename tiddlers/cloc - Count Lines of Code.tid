@@ -1,0 +1,12 @@
+created: 20250514092449699
+modified: 20250514092620973
+tags: 
+title: cloc - Count Lines of Code
+type: text/vnd.tiddlywiki
+
+
+```sh
+cloc --vcs=git .
+```
+
+https://github.com/AlDanial/cloc

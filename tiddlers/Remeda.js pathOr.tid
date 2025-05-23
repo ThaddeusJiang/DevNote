@@ -1,0 +1,13 @@
+created: 20250514073551959
+modified: 20250514073635209
+tags: [[point-free style]]
+title: Remeda.js pathOr
+type: text/vnd.tiddlywiki
+
+
+
+```js
+const data = { x: 10 }
+R.pathOr(data, ["y"], 2); // 2
+
+```

@@ -1,0 +1,10 @@
+created: 20250522063504277
+modified: 20250522063558118
+tags: 
+title: Typesense 不支持 RDB 的 join 操作
+type: text/vnd.tiddlywiki
+
+可以通过嵌套数据和冗余存储来实现
+
+[img[https://i.gyazo.com/824adb426d90f187e1e2b95e0c72359b.png]]
+

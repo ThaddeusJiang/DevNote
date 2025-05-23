@@ -1,0 +1,13 @@
+created: 20250520083720456
+modified: 20250520083912067
+tags: error-logs
+title: rails ActiveSupport::MessageEncryptor::InvalidMessage
+type: text/vnd.tiddlywiki
+
+原因：RAILS_MASTER_KEY 参数不对
+
+解决：
+
+```sh
+RAILS_MASTER_KEY=$(cat config/master.key)
+```

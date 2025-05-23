@@ -1,0 +1,14 @@
+created: 20250514100858981
+modified: 20250514101045701
+tags: 
+title: Conform-to/react form.allErrors 和 errors 傻傻分不清楚
+type: text/vnd.tiddlywiki
+
+form.valid is false, I'd like to know errors.
+form.allErrors has value, form.errors is undefined.
+
+[img[https://i.gyazo.com/ecc6d785c54cb7fd026aa9f0fbf6a08d.png]]
+
+allErrors 👍 errors 💩
+
+今后用 form.allErrors

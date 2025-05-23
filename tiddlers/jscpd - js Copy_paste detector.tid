@@ -1,0 +1,12 @@
+created: 20250514091832817
+modified: 20250514092707027
+tags: TJ_recommendations
+title: jscpd - js Copy/paste detector
+type: text/vnd.tiddlywiki
+
+
+```sh
+npx jscpd .
+```
+
+https://github.com/kucherenko/jscpd

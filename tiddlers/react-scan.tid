@@ -1,0 +1,16 @@
+created: 20250514082042999
+modified: 20250514082317410
+tags: TJ_recommendations
+title: react-scan
+type: text/vnd.tiddlywiki
+
+
+* 使用简单，可以免安装，也可以安装
+
+```
+npx react-scan@latest http://localhost:3000
+# you can technically scan ANY website on the web:
+# npx react-scan@latest https://react.dev
+```
+
+https://github.com/aidenybai/react-scan/blob/main/docs/installation/remix.md

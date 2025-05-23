@@ -1,0 +1,46 @@
+created: 20250521051326130
+modified: 20250521051908112
+tags: 
+title: docker desktop 清理资源
+type: text/vnd.tiddlywiki
+
+清理特定类型缓存
+
+￼清理未使用的镜像（dangling images）
+
+```
+docker image prune -f
+```
+
+￼清理未使用的容器
+
+```
+docker container prune -f
+```
+
+￼清理未使用的网络
+
+```
+docker network prune -f
+```
+
+￼清理未使用的卷
+
+```
+docker volume prune -f
+```
+
+
+
+清理构建缓存（build cache）
+
+```
+docker builder prune -f
+```
+
+!! 清理所有
+
+```
+docker system prune -f
+```
+

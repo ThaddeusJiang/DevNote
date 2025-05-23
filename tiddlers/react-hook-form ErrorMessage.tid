@@ -1,0 +1,50 @@
+created: 20250514071946327
+modified: 20250514072430618
+tags: 
+title: react-hook-form ErrorMessage
+type: text/vnd.tiddlywiki
+
+
+```sh
+npm install @hookform/error-message
+```
+
+```jsx
+ const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm<FormInputs>()
+
+      <ErrorMessage errors={errors} name="singleErrorInput" />
+
+      <ErrorMessage
+        errors={errors}
+        name="singleErrorInput"
+        render={({ message }) => <p>{message}</p>}
+      />
+
+      <ErrorMessage
+        errors={errors}
+        name="multipleErrorInput"
+        render={({ messages }) =>
+          messages &&
+          Object.entries(messages).map(([type, message]) => (
+            <p key={type}>{message}</p>
+          ))
+        }
+      />
+```
+
+使用 `FormProvider` `FormContext` 时连 `errors` 都可以省略，只需要 `name`
+
+```jsx
+  const methods = useForm()
+  const { register, reset } = methods
+
+  return (
+    <FormProvider {...methods}> ... 
+  )
+```
+
+https://react-hook-form.com/docs/useformstate/errormessage

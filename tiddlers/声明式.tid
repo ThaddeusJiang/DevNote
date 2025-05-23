@@ -1,0 +1,21 @@
+created: 20250514072951333
+modified: 20250514093048455
+tags: 
+title: 声明式
+type: text/vnd.tiddlywiki
+
+
+```diff
+-  <FormWrapper
+-    label="所属ユーザー"
+-    errors={errors.userIds?.[0]?.message ? { message: errors.userIds?.[0]?.message } : undefined}
+-  >
++ <FormWrapper label="所属ユーザー" name='userIds' control={control}>
+```
+
+point-free style 不需要下面代码
+
+```js
+errors.userIds?.[0]?.message
+```
+

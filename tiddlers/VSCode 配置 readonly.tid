@@ -1,0 +1,18 @@
+created: 20250514071324324
+modified: 20250514071524986
+tags: 
+title: VSCode 配置 readonly
+type: text/vnd.tiddlywiki
+
+
+VSCode 配置 readonly 可以防止自动生成的 (auto-generated) 代码被修改。
+
+.vscode/settings.json
+
+```json
+  "files.readonlyInclude": {
+    "db/schema.rb": true,
+    "app/javascript/generated/**": true
+  },
+  "files.readonlyFromPermissions": true
+```

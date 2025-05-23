@@ -1,0 +1,21 @@
+created: 20250514095437902
+modified: 20250514100821659
+tags: 
+title: Remix.run 的 request flood problem
+type: text/vnd.tiddlywiki
+
+
+仅仅是一个 submit 动作，触发了 `5` 个 requests。
+
+[img[https://i.gyazo.com/2dc590deec9138bdfa717c5c15b68b7f.gif]]
+
+技术栈：remix + conform
+
+remix Form 提交表单，在 action 进行数据验证，失败后返回。
+
+一共产生了 4 条请求（有可能是我使用方式不对）
+
+1 是 submit，有必要
+
+2,3,4,5 感觉没有必要
+

@@ -1,0 +1,27 @@
+created: 20250514073955559
+modified: 20250514074353068
+tags: 
+title: Remeda.js 提供 toCamelCase 函数
+type: text/vnd.tiddlywiki
+
+Remeda.js 提供 toCamelCase 函数，正式项目中请不要再造轮子了。
+
+private code 中手写 toCamelCase function，维护成本很高，懂得自然懂。
+
+```js
+import * as R from "remeda";
+
+R.toCamelCase("hello_world"); // "helloWorld"
+```
+
+https://remedajs.com/docs/#toCamelCase
+
+self hand made toCamelCase function，维护成本
+
+TL;DR: codes are bugs.
+
+* 测试成本
+* 学习成本
+* 升级成本
+
+

@@ -1,0 +1,10 @@
+created: 20250520082024036
+modified: 20250520082040820
+tags: 
+title: Docker workdir
+type: text/vnd.tiddlywiki
+
+
+```yml
+WORKDIR /myapp
+```

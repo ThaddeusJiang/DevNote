@@ -1,0 +1,96 @@
+created: 20250514085211359
+modified: 20250514090059816
+tags: 
+title: inertia.js 用于 classic server-side routing ↔️ SPA 似乎不错
+type: text/vnd.tiddlywiki
+
+
+
+!! Server-side setup
+
+```sh
+bundle add inertia_rails
+
+bin/rails generate inertia:install
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csp_meta_tag %>
+
+    <%= inertia_ssr_head %>
+
+    <%# If you want to use React add `vite_react_refresh_tag` %>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+```
+
+```ruby
+class EventsController < ApplicationController
+  def show
+    event = Event.find(params[:id])
+
+    render inertia: 'Event/Show', props: {
+      event: event.as_json(
+        only: [:id, :title, :start_date, :description]
+      )
+    }
+  end
+end
+```
+
+!! Client-side setup
+
+```sh
+npm install @inertiajs/react react react-dom
+```
+
+```js
+// frontend/entrypoints/inertia.js
+import { createInertiaApp } from '@inertiajs/react'
+import { createElement } from 'react'
+import { createRoot } from 'react-dom/client'
+
+createInertiaApp({
+  resolve: (name) => {
+    const pages = import.meta.glob('../pages/**/*.jsx', { eager: true })
+    return pages[`../pages/${name}.jsx`]
+  },
+  setup({ el, App, props }) {
+    const root = createRoot(el)
+    root.render(createElement(App, props))
+  },
+})
+```
+
+```js
+// Vite
+// frontend/entrypoints/inertia.js
+createInertiaApp({
+  resolve: (name) => {
+    const pages = import.meta.glob('../pages/**/*.jsx', { eager: true })
+    return pages[`../pages/${name}.jsx`]
+  },
+  //...
+})
+```
+
+```js
+createInertiaApp({
+  id: 'my-app',
+  // ...
+})
+```
+
+* https://inertia-rails.dev/guide/server-side-setup
+* https://github.com/inertiajs/inertia-rails
+* https://inertiajs.com/

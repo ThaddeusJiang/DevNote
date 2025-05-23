@@ -1,0 +1,23 @@
+created: 20250514065403742
+modified: 20250514065607509
+tags: 
+title: SASS mixin
+type: text/vnd.tiddlywiki
+
+
+```scss
+@mixin line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.box {
+  @include line-clamp-2;
+  
+  height: 100%;
+  width: 100%;
+}
+```

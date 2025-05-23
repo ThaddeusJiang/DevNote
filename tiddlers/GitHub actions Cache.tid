@@ -1,0 +1,65 @@
+created: 20250514070403160
+modified: 20250514070956787
+tags: 
+title: GitHub actions Cache
+type: text/vnd.tiddlywiki
+
+
+
+```yml
+- uses: actions/cache@v4
+  with:
+    path: |
+      ~/.bun/install/cache
+    key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
+```
+
+```yml
+- uses: actions/cache@v4
+  with:
+    path: |
+      deps
+      _build
+    key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+    restore-keys: |
+      ${{ runner.os }}-mix-
+```
+
+```yml
+steps:
+  - uses: actions/checkout@v4
+
+  - uses: actions/cache/restore@v4
+    id: cache
+    with:
+      path: path/to/dependencies
+      key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
+  - name: Install Dependencies
+    if: steps.cache.outputs.cache-hit != 'true'
+    run: /install.sh
+
+  - name: Build
+    run: /build.sh
+
+  - name: Publish package to public
+    run: /publish.sh
+```
+
+!! actions/setup-node 提供 cache 功能
+
+```yml
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-node@v4
+  with:
+    node-version: 20
+    cache: 'npm'
+- run: npm ci
+- run: npm test
+```
+
+refs
+
+* https://github.com/actions/cache
+* https://github.com/actions/setup-node#caching-global-packages-data

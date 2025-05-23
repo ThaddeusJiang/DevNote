@@ -1,6 +1,6 @@
 created: 20230221001904248
 creator: TJ
-modified: 20250513093844363
+modified: 20250514063335642
 modifier: TJ
 tags: 
 title: Welcome
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 欢迎来到我的 dev-notes，我的出发点是能像 [[Xuanwo's Note|https://note.xuanwo.io/#/page/Contents]] 一样分享一些笔记。
 
-本笔记使用 TiddlyWiki 构建，查看本站的源代码 https://github.com/ThaddeusJiang/dev-notes ，欢迎 Star 一下以示支持。
+本笔记使用 TiddlyWiki 构建，查看本站的源代码 https://github.com/ThaddeusJiang/dev-notes ，欢迎 Star ⭐。
 
 * 发现错误，请在 Issues 提交反馈
 * 探讨问题，请在 Discussions 开启讨论

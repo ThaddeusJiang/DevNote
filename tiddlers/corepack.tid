@@ -1,0 +1,14 @@
+created: 20250514063845479
+modified: 20250514064040037
+tags: 
+title: corepack
+type: text/vnd.tiddlywiki
+
+
+不用安装 yarn pnpm 也可以使用它们，很方便。BTW，imo: Bun 更酷
+
+```sh
+corepack enable
+```
+
+https://github.com/nodejs/corepack

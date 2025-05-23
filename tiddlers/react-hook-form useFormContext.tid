@@ -1,0 +1,13 @@
+created: 20250514072456197
+modified: 20250514072535756
+tags: 
+title: react-hook-form useFormContext
+type: text/vnd.tiddlywiki
+
+
+```js
+function NestedInput() {
+  const { register } = useFormContext() // retrieve all hook methods
+  return <input {...register("test")} />
+}
+```

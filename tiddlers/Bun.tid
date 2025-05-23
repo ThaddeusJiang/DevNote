@@ -1,0 +1,16 @@
+created: 20250514064042706
+modified: 20250514065311812
+tags: TJ_recommendations
+title: Bun
+type: text/vnd.tiddlywiki
+
+
+Bun 是一个 all-in-one JavaScript 工具，包含 runtime, bundler, test runner 等等。
+
+# 性能优于 Node.js Deno
+# 开箱即用多种工具，可以减少很多依赖，减少集成外部工具的工作，有点类似 Omakase(おまかせ)。这是我最喜欢的优点
+# Docs 优秀，示例简洁、示例代码优秀
+
+Others
+
+* [[bun repl]] 优秀，支持 ESM import 真的太酷了。 甩掉 Node.js 10 条街

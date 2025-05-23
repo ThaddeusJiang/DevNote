@@ -1,0 +1,18 @@
+created: 20250514070305018
+modified: 20250514070349331
+tags: 
+title: GitHub actions Upload files
+type: text/vnd.tiddlywiki
+
+
+actions/upload-artifact
+
+```yml
+      - name: 📊 Upload report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+```

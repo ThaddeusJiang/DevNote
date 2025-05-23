@@ -1,0 +1,25 @@
+created: 20250514063405458
+modified: 20250514063731008
+tags: 
+title: GitHub Actions: 可以指定触发的 paths
+type: text/vnd.tiddlywiki
+
+
+```yml
+on:
+  push:
+    paths:
+      - .github/workflows/eslint.yml
+      - .github/workflows/js.yml
+      - .eslintrc.js
+      - .eslintignore
+      - app/javascript/**/*.js
+      - app/javascript/**/*.jsx
+      - app/javascript/**/*.ts
+      - app/javascript/**/*.tsx
+      - babel.config.js
+      - package.json
+      - postcss.config.js
+      - vitest.config.ts
+      - yarn.lock
+```
