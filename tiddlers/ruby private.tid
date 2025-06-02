@@ -1,0 +1,12 @@
+created: 20250528054649271
+modified: 20250528054926751
+tags: 
+title: ruby private
+type: text/vnd.tiddlywiki
+
+
+非 ruby 开发者尝试编写 ruby 时遇到的困难之：ruby 只需要写一次 private，然后在其后面的 methods 都是 private 的。
+
+非 ruby 开发者第一次遇到时可能会很困惑。
+
+[img[https://i.gyazo.com/addfd3c22ed2a7322a35a029af5e84ed.png]]

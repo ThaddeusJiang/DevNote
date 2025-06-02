@@ -1,0 +1,51 @@
+created: 20250602095935387
+modified: 20250602101253976
+tags: 
+title: best dark-mode solution
+type: text/vnd.tiddlywiki
+
+ 
+我认为最好的 dark-mode 解决方案是不显式定义 dark，使用 background 和 content 定义反差，当 dark, light 切换时，自动切换反差色。
+
+daisyUI 支持这种做法
+
+```
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-base-100: oklch(98% 0.02 240);
+  --color-base-200: oklch(95% 0.03 240);
+  --color-base-300: oklch(92% 0.04 240);
+  --color-base-content: oklch(20% 0.05 240);
+  --color-primary: oklch(55% 0.3 240);
+  --color-primary-content: oklch(98% 0.01 240);
+  --color-secondary: oklch(70% 0.25 200);
+  --color-secondary-content: oklch(98% 0.01 200);
+  --color-accent: oklch(65% 0.25 160);
+  --color-accent-content: oklch(98% 0.01 160);
+  --color-neutral: oklch(50% 0.05 240);
+  --color-neutral-content: oklch(98% 0.01 240);
+  --color-info: oklch(70% 0.2 220);
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: oklch(65% 0.25 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(80% 0.25 80);
+  --color-warning-content: oklch(20% 0.05 80);
+  --color-error: oklch(65% 0.3 30);
+  --color-error-content: oklch(98% 0.01 30);
+```
+
+`-content` 即反差色。
+
+https://ui.shadcn.com 也不要求 developers 手动编写 dark mode 代码。
+
+!! Code
+
+为了实现上面开发体验
+
+# 代码中不应该出现 `white` `black` `gray` 的颜色，取而代之应该是 `base` `content`
+
+
+
+[img[semantic-color.png]]
+
+https://daisyui.com/docs/colors/#benefits

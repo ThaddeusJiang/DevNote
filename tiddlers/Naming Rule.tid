@@ -1,0 +1,37 @@
+created: 20250526021517630
+modified: 20250526022738895
+tags: 即简单又困难 TJ_must
+title: Naming Rule
+type: text/vnd.tiddlywiki
+
+命名规范是典型的“即简单又困难，即困难又简单”
+
+命名规范看似简单，但是在很多项目中混乱无比，很多人因为其太“简单”而忽略它，命名十分影响开发效率却被熟视无睹。
+
+命名规范虽然没有绝对的优劣之分，但是不统一绝对是很差的实践。
+
+我个人期待通过命名达到的效果：
+
+# 全文检索和文件检索可以匹配到相同内容
+# 文件名和函数名可以同时匹配
+
+我遇到的 Issues
+
+1. 文件名和函数名不匹配
+
+文件名是 `contactPageUpdate` 函数名是 `contactPageUpdate` 烦，我没有办法给你录屏展示这种混乱的命名让我的开发节奏被打乱了多少次，这真的很烦。
+
+```js
+// contactPageUpdate.graphql
+mutation UpdateContactPage($input: ContactPageUpdateInput!) {
+  contactPage {
+    update(input: $input) {
+      contactPage {
+        id
+      }
+    }
+  }
+}
+```
+
+

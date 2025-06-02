@@ -1,0 +1,47 @@
+created: 20250602011408557
+modified: 20250602012422404
+tags: 
+title: HTML dataset
+type: text/vnd.tiddlywiki
+
+
+约定：
+在 React 项目中，只有在无法使用 props 的情况下才需要使用 dataset，在我编写 React  10年左右的经验中，我没有遇到必须使用 dataset，props 无法解决的情况。
+
+!! Bad
+
+我见过使用 dataset + css selector 实现 stylesheet 的情况
+
+```jsx
+<div className={styles.wrapper} data-disabled={disabled}>
+  <button onClick={onClick} type="button" disabled={disabled}>
+    <AddIcon color="primary" hover />
+  </button>
+</div>
+```
+
+```scss
+.wrapper {
+  > button {
+    cursor: pointer;
+  }
+  &[data-disabled='true'] {
+    > button {
+      cursor: not-allowed;
+    }
+  }
+}
+```
+
+我认为这样做法不好。
+
+理由：失去 lint 等工具的静态分析，data-disabled 在 jsx 和 Sass 中没有检查和约束。
+
+开发者体验：
+
+# 失去 lint
+# 失去 editor 提示
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/dataset
