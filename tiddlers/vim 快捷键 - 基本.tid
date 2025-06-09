@@ -1,0 +1,40 @@
+created: 20250609011151074
+modified: 20250609011806024
+tags: 
+title: vim 快捷键 - 基本
+type: text/vnd.tiddlywiki
+
+
+* d = delete = cut 剪切
+* y = yank = copy 复制
+	* 复制单词 `yiw`
+* p = paste  粘贴 
+
+* ^ 第一个非空白字符；
+* 0 行首
+* $ 行尾
+* gg 文件首
+* G 文件尾
+
+---
+
+* w 后移到单词头
+* e 后移到单词尾
+* b 前移到单词首
+
+---
+
+* :set n 显示行号
+* :n 跳转到指定行
+
+---
+
+* v (visual model) 可视模式，可以多行选中
+
+---
+
+* i (inside)
+** `ci"` `ci)` `ciw` change inside
+** di delete inside
+** vi select inside
+

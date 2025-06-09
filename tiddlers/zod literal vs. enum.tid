@@ -1,0 +1,16 @@
+created: 20250609021804862
+modified: 20250609021925845
+tags: 
+title: zod literal vs. enum
+type: text/vnd.tiddlywiki
+
+* 只接受一个固定的值	用 z.literal("only")
+* 接受多个可能的字符串值（枚举）	用 z.enum([...])
+* 接受多个非字符串字面量值（如数字）	用 z.union([z.literal(1), z.literal(2)])
+
+> 因为 z.enum() 只支持字符串枚举，如果是数字或布尔值枚举，就要用 z.union([z.literal(...), ...])。
+
+
+
+[img[https://i.gyazo.com/42940f85b29d1cfd6fb5920ec2145cd9.png]]
+

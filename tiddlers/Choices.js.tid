@@ -1,0 +1,10 @@
+created: 20250609100524285
+modified: 20250609100704802
+tags: 
+title: Choices.js
+type: text/vnd.tiddlywiki
+
+
+我已经厌倦的 React 或者说 frontend-only framework ，我需要一个可以扩展到其他 framework 的 SelectInput。Choices.js 感觉还不错。
+
+link: https://github.com/Choices-js/Choices

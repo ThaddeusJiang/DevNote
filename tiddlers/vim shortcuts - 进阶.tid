@@ -1,0 +1,8 @@
+created: 20250609011944332
+modified: 20250609012042421
+tags: 
+title: vim shortcuts - 进阶
+type: text/vnd.tiddlywiki
+
+
+*  `shift + r` 可以实现逐一字符的替换（replace），在修改 typo 时好用 👍

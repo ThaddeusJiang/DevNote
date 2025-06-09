@@ -1,0 +1,12 @@
+created: 20250604075949500
+modified: 20250604080056894
+tags: 
+title: Rails Record scope
+type: text/vnd.tiddlywiki
+
+
+```ruby
+scope :with_active, ->(is_active = true) { where(is_active:) }
+
+contact_page.contact_items.with_active.order(:order)
+```
