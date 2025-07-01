@@ -1,8 +1,10 @@
 created: 20250507041632453
-modified: 20250507042534743
+modified: 20250612023045536
 tags: TJ_edu
-title: Zod enums
+title: Zod .enum
 type: text/vnd.tiddlywiki
+
+
 
 我认为 Zod enums 是 TypeScript 项目中实现 enums 最优雅的方式，type 字面量、value 字面量、options 字面量，太棒了。
 
@@ -36,6 +38,9 @@ FishEnum.options; // ["Salmon", "Tuna", "Trout"];
 
 ```
 
-
-
 https://zod.dev/?id=zod-enums
+
+为什么喜欢 zod enum?
+
+# 我的 JS 项目中一定会引入 zod，如果你的项目中没有 zod，那可能是项目太简单了，或者...
+# zod 支持动态验证，处理请求和验证数据时有效；静态检查不行。

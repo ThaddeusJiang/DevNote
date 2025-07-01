@@ -1,0 +1,11 @@
+created: 20250701012740125
+modified: 20250701012946102
+tags: 
+title: TiddlyWiki Tag 使用
+type: text/vnd.tiddlywiki
+
+
+
+因为 TiddlyWiki 的 Tag 在视觉上太过于突出，使用 Tag 做笔记集合不合适，会很烦。
+
+例如：我想整理一下 GitHub 的各种 token ，我创建了一个 tidder 手动管理，而不是使用 tag

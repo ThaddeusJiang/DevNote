@@ -1,0 +1,13 @@
+created: 20250622032001969
+modified: 20250622032834875
+tags: TechRadar/采纳
+title: tidewave.ai
+type: text/vnd.tiddlywiki
+
+tidewave 开发环境下使用的 MCP 工具。
+
+对比普通 AI Editor
+
+tidewave 集成到了 server runtime 所以可以收集 logs，并且直接调用 runtime functions 。没有 MCP 之前的 AI 只是一个静态工具，可以写代码，可以调用代码，但是都是静态的。
+
+Tidewave 有点像为 AI 提供了一个 [[REPL]] ，并且因为专门编写了编程语言相关的 functions，所以让 AI 更像一个专家系统，更专注、更专业，不会再将 JavaScript 的知识错误应用到 Elixir 项目了。

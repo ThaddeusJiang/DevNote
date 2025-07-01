@@ -1,0 +1,14 @@
+created: 20250619085408161
+modified: 20250619085850467
+tags: 
+title: rails puma foreman
+type: text/vnd.tiddlywiki
+
+
+* puma 是 rails 默认 server，支持高并发。
+* foreman 是 Procfile-based 项目的启动器
+
+Procfile 以前在 heroku 中使用，虽然 rails 社区的一些工具还是会创建 Procfile 文件，但是因为我主要使用 docker compose 启动项目，所以 foreman 对我来说没有用。
+
+* https://github.com/puma/puma
+* https://github.com/ddollar/foreman

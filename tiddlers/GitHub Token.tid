@@ -1,0 +1,24 @@
+created: 20250701012946984
+modified: 20250701013605842
+tags: 
+title: GitHub Token
+type: text/vnd.tiddlywiki
+
+
+类型
+
+# GitHub Apps
+# OAuth Apps
+# Personal access tokens
+## Fine-grained personal access tokens
+## Personal access tokens (classic)
+# [[GitHub Actions secrets.GITHUB_TOKEN]]
+
+
+位置
+
+```
+Settings / Developer Settings
+```
+
+[img[https://i.gyazo.com/7dd983e58313ae4602bff0fa587ae23c.png]]

@@ -1,0 +1,13 @@
+created: 20250622034443456
+modified: 20250622035054536
+tags: 
+title: No code generation
+type: text/vnd.tiddlywiki
+
+关于 No code generation
+
+imo: 
+
+曾经我也觉得 code generation 很难使用，尤其是类型体操，简直烦死了。但是经过和一些开发者水平参差不齐的团队合作以后，我觉得有时候 code generation 的确可以减少 bugs。虽然代码没有纯手写质量高，但是项目整体质量比纯手写情况下要高。
+
+很多 JS frameworks 想要提供类似 Ruby on Rails 的开发体验，但是又想强调 No code generation，我认为很奇怪，因为 JS 没有 ruby 那样元编程的能力，所以导致很多 JS frameworks 需要编写很多样板代码才能实现近似 rails 的开发体验，但是我认为 codes are bugs，we should do less but better.

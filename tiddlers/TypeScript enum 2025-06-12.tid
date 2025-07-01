@@ -1,0 +1,26 @@
+created: 20250612022229665
+modified: 20250612022326373
+tags: 
+title: TypeScript enum 2025-06-12
+type: text/vnd.tiddlywiki
+
+
+```ts
+enum STATUSES {
+  ACTIVE = "active",
+  INACTIVE = "inactive",
+  PENDING = "pending",
+}
+
+type Status = STATUSES | `${STATUSES}`;
+
+const setStatus = (s: Status) => {
+  console.log("Status set to:", s);
+};
+
+setStatus(STATUSES.ACTIVE);   // ✅
+setStatus(STATUSES.INACTIVE); // ✅
+setStatus(STATUSES.PENDING);  // ✅
+setStatus("pending");         // ✅
+setStatus("pendingx");        // ❌
+```

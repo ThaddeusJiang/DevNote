@@ -1,0 +1,10 @@
+created: 20250616051605257
+modified: 20250619061057508
+tags: 
+title: Dockerfile in local 不需要 npm install
+type: text/vnd.tiddlywiki
+
+
+我今天学会一个小技巧，即：在 local 使用 docker compose 启动服务时，不需要在 Dockerfile 中 npm install，可以在 docker-compose.yml 中执行。
+
+这样每次 build 的 image 不大，node_modules 在 docker volume 中可以重复利用。

@@ -1,0 +1,30 @@
+created: 20250610093314474
+modified: 20250610093442166
+tags: 
+title: zod/v4 支持生成 JSON Schema
+type: text/vnd.tiddlywiki
+
+zod/v4 支持生成 JSON Schema，好酷啊，love it
+
+```js
+const mySchema = z.object({
+  firstName: z.string().describe("Your first name"),
+  lastName: z.string().meta({ title: "last_name" }),
+  age: z.number().meta({ examples: [12, 99] }),
+});
+ 
+z.toJSONSchema(mySchema);
+// => {
+//   type: 'object',
+//   properties: {
+//     firstName: { type: 'string', description: 'Your first name' },
+//     lastName: { type: 'string', title: 'last_name' },
+//     age: { type: 'number', examples: [ 12, 99 ] }
+//   },
+//   required: [ 'firstName', 'lastName', 'age' ]
+// }
+```
+
+zod/v4 meta() 也好用，喜欢
+
+https://zod.dev/v4?id=json-schema-conversion

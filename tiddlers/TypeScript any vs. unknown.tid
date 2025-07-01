@@ -1,7 +1,8 @@
 created: 20230221000705858
-modified: 20230221004115751
+modified: 20250612063558229
 tags: JS/TS
-title: ts any vs. unknown
+title: TypeScript any vs. unknown
+type: text/vnd.tiddlywiki
 
 TypeScript any 和 unknown 区别
 

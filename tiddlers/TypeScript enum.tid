@@ -1,7 +1,7 @@
 created: 20250507040104214
-modified: 20250507041959352
+modified: 20250612022650229
 tags: 
-title: TypeScript Enums
+title: TypeScript enum
 type: text/vnd.tiddlywiki
 
 TypeScript 官方已经说了“你可能不需要 enum”，推荐使用 `as const` object 
@@ -18,6 +18,8 @@ type Direction = typeof ODirection[keyof typeof ODirection];
 function run(dir: Direction) {}
 ```
 
-我认为 `typeof` `keyof typeof` 是类型体操。因为我的 JS 项目中一定会有 zod.dev ，所以我用 Zod enums
+我认为 `type Direction = typeof ODirection[keyof typeof ODirection];` 是类型体操，不容易理解也不容易编写。
 
-{{Zod enums}}
+因为我的 JS 项目中一定会有 zod.dev ，所以我用 Zod enums。
+
+[[Zod enum]]

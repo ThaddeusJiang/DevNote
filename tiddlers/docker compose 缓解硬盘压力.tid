@@ -1,0 +1,15 @@
+created: 20250623014717483
+modified: 20250623015830339
+tags: 
+title: docker compose 缓解硬盘压力
+type: text/vnd.tiddlywiki
+
+一个小技巧：不在 Dockerfile 中编写 install，在 docker-compose.yml 中编写，可以明显缓解电脑硬盘压力。
+
+[img[https://i.gyazo.com/a2ceb798ae9d229221a45a2918db2f4b.png]]
+
+install in build 硬盘中全是 4GB 的 images，install in run 硬盘中是 1.39 GB 的 images。
+
+[img[https://i.gyazo.com/d965a3d3f7320468d40c285bbb092d05.png]]
+
+因为我比较懒，我的电脑里可能有 100+ Dangling images 😂
