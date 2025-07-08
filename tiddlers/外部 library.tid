@@ -1,0 +1,16 @@
+created: 20250708043921914
+modified: 20250708044803209
+tags: 
+title: 外部 library
+type: text/vnd.tiddlywiki
+
+
+在软件开发中，我们常常需要二次封装一些外部 library，我有自己的组织外部 library 的文件夹结构，很好用。
+
+我一般会创建一个专门的文件夹来存放外部 libraries，经验，尽量保证文件夹数量少
+
+有几个命名我常用
+
+* `sdks` 存放有副作用的外部依赖，例如 http-client, dayjs 等
+* `external-ui/*`例如：react-datepicker
+

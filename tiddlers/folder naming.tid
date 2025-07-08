@@ -1,0 +1,14 @@
+created: 20250708045103670
+modified: 20250708045522397
+tags: 
+title: folder naming
+type: text/vnd.tiddlywiki
+
+
+
+常用命名
+
+* `clients/` 针对 API 或服务等粉状
+* `utils/` 工具函数（无状态、无副作用）
+* `helpers/` 辅助函数，与业务强相关
+* `external-ui/` 外部 UI libraries 的预配置

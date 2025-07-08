@@ -1,0 +1,13 @@
+created: 20250702082713584
+modified: 20250702083830733
+tags: 
+title: GitHub Merge pull request
+type: text/vnd.tiddlywiki
+
+我始终选择 【Squash and merge】
+
+优点：
+
+# git log 清晰，一个 pull request 只有一条记录，且 message 和 pull request 标题保持一致。
+
+[img width="50%"  [https://i.gyazo.com/54495b5b3f8785d5df4ba6be957434fa.png]][img width="50%" [https://i.gyazo.com/b86fd7b1dc0aa690472d2938f188c12d.png]]

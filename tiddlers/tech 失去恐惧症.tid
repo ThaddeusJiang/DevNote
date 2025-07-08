@@ -1,0 +1,9 @@
+created: 20250703073302859
+modified: 20250708050525349
+tags: 
+title: tech 失去恐惧症
+type: text/vnd.tiddlywiki
+
+失去恐惧症、囤积癖、“如果没有问题就不要动”
+
+这是都是技术债的主要原因，我看过很多项目在项目进度宽松时构建了非常丰富的 Storybook 和 E2E testing，但是慢慢就没人维护了。

@@ -1,0 +1,15 @@
+created: 20250707014551955
+modified: 20250707014648941
+tags: 
+title: 2025-07-07 direnv
+type: text/vnd.tiddlywiki
+
+开始使用 direnv
+
+```sh
+brew install direnv
+```
+
+
+
+https://github.com/direnv/direnv?tab=readme-ov-file

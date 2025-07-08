@@ -1,16 +1,16 @@
 created: 20250502092657042
-modified: 20250502093401314
+modified: 20250701095249958
 title: TiddlyWiki
 type: text/vnd.tiddlywiki
 
 TiddlyWiki 是一个高可玩性 notebook，非常适合 JS developers。
 
 # 它可以无限自定义，你可以添加功能，可以修改 UI，只要你的 JS 水平够强，它几乎有无限可能。
-# 你可以把它当作一个[[开发环境]]完，我常常在 TiddlyWiki 中直接编写 JS, CSS, HTML，它就像一个不依赖 compile tools 的开发环境。
+# 你可以把它当作一个[[开发环境]]玩，我常常在 TiddlyWiki 中直接编写 JS, CSS, HTML，它就像一个不依赖 compile tools 的开发环境。
 
 推荐几个我在使用 TiddlyWiki plugins
 
-* https://github.com/ThaddeusJiang/tiddlyjam 将 TiddlyWiki 转换成 blog
+* https://github.com/ThaddeusJiang/tiddlyjam 将 TiddlyWiki 转换成 Blog
 * https://github.com/ThaddeusJiang/Projectify 将 TiddlyWiki 作为一个 Todo App 
 
-https://tiddlywiki.com/
+see more: https://tiddlywiki.com/

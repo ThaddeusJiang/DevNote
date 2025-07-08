@@ -1,0 +1,22 @@
+created: 20250704080758176
+modified: 20250707014549432
+tags: 
+title: SaaS: GitHub Release workflow
+type: text/vnd.tiddlywiki
+
+
+branch: 
+
+* develop 开发
+* main 生产
+* staging 预发布 & 最终测试
+
+SaaS 似乎没有 alpha beta 版本管理
+
+hosting:
+
+* develop
+* main
+* staging / demo
+
+
