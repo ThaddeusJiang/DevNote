@@ -1,0 +1,12 @@
+created: 20250711035428526
+modified: 20250711035657315
+tags: 
+title: TJ: 复杂项目不要使用 static files 部署 frontend
+type: text/vnd.tiddlywiki
+
+复杂项目不要使用 static files 部署 frontend，不推荐使用 AWS S3 部署 frontend。
+推荐通过 Node.js server 运行 frontend。
+
+优点：
+
+* local 和 hosting 环境容易统一，容易 debug

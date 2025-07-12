@@ -1,0 +1,30 @@
+created: 20250710073121503
+modified: 20250710073500162
+tags: 
+title: GitHub actions github.sha
+type: text/vnd.tiddlywiki
+
+
+
+
+```yml
+# Good
+- uses: actions/checkout@v4
+  with:
+    ref: ${{ github.event.release.tag_name }}
+- name: Get commit sha
+  id: tag-sha
+  run: echo "tag_sha=${{ github.sha }}" >> $GITHUB_OUTPUT
+```
+
+`github.event.release.tag_name` 可以保证 github.sha 是 release 指向的，`github.ref` 会在 workflow_dispatch: 时出错。
+
+```yml
+# Bad
+- uses: actions/checkout@v4
+  with:
+    ref: ${{ github.ref }}
+- name: Get commit sha
+  id: tag-sha
+  run: echo "tag_sha=${{ github.sha }}" >> $GITHUB_OUTPUT
+```
