@@ -1,9 +1,14 @@
 created: 20250612022229665
-modified: 20250612022326373
+modified: 20250801090055711
 tags: 
-title: TypeScript enum 2025-06-12
+title: TypeScript enum 超酷定义
 type: text/vnd.tiddlywiki
 
+> 学到了
+
+```ts
+type Status = STATUSES | `${STATUSES}`;
+```
 
 ```ts
 enum STATUSES {

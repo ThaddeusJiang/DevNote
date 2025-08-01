@@ -1,16 +1,13 @@
 created: 20220302002824184
 creator: TJ
-modified: 20250801082022348
+modified: 20250801085249690
 modifier: TJ
-tags: $:/tags/ViewTemplate CustomTiddlers 学习笔记
+tags: $:/tags/ViewTemplate CustomTiddlers
 title: tw5-lego/tiddlers-counter
 type: text/vnd.tiddlywiki
 
 
-
 <footer>
-
 <strong><$text text={{$:/SiteTitle}} /></strong> has <strong><$count filter="[!is[system]]"/></strong> tiddlers.
-
 </footer>
 

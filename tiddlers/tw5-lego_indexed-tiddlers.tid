@@ -1,8 +1,9 @@
 created: 20250801072250616
-modified: 20250801080155303
-tags: $:/tags/ViewTemplate $:/plugins/ThaddeusJiang/lego $:/plugins/ThaddeusJiang/lego/feature
-title: $:/plugins/ThaddeusJiang/lego/ui/ViewTemplate/indexed-tiddlers
+modified: 20250801085705098
+tags: $:/tags/ViewTemplate
+title: tw5-lego/indexed-tiddlers
 type: text/vnd.tiddlywiki
+
 
 <$list filter="[all[current]tag[#Index]]">
   <$list filter="[all[tiddlers]!is[system]!tag[hide]search:title<currentTiddler>sort[title]!title<currentTiddler>]">
