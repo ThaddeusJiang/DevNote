@@ -1,10 +1,10 @@
 created: 20250623014717483
-modified: 20250623015830339
+modified: 20250730025213129
 tags: 
-title: docker compose 缓解硬盘压力
+title: local: docker compose 缓解硬盘压力
 type: text/vnd.tiddlywiki
 
-一个小技巧：不在 Dockerfile 中编写 install，在 docker-compose.yml 中编写，可以明显缓解电脑硬盘压力。
+local docker compose 缓解硬盘压力 Tips：Dockerfile without install，install in docker-compose.yml，可以明显缓解硬盘压力。
 
 [img[https://i.gyazo.com/a2ceb798ae9d229221a45a2918db2f4b.png]]
 

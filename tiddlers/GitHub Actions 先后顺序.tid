@@ -1,0 +1,17 @@
+created: 20250728092404099
+modified: 20250728100833338
+tags: 
+title: GitHub Actions 先后顺序
+type: text/vnd.tiddlywiki
+
+`needs`
+
+```yml
+jobs:
+  job1:
+  job2:
+    needs: job1
+  job3:
+    if: ${{ always() }}
+    needs: [job1, job2]
+```

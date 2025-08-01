@@ -1,0 +1,7 @@
+created: 20250730090141816
+modified: 20250730090156574
+tags: 
+title: playwright timeout default 30s
+type: text/vnd.tiddlywiki
+
+https://playwright.dev/docs/test-timeouts#test-timeout

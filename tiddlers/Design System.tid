@@ -1,0 +1,31 @@
+created: 20250625011941844
+modified: 20250625013250001
+tags: 
+title: Design System
+type: text/vnd.tiddlywiki
+
+我关于 Design System 的笔记
+
+# Why: 为什么需要 Design System？
+
+* 简化 UI 开发
+* 加速 UI 开发
+* UI 更稳定
+
+# When: 什么时候应该实现 Design System？
+
+* 项目基本稳定，新功能的绝大多数 UI 可以用已有代码实现
+* 不熟悉 frontend 的开发者也在编写 UI
+* 多个项目同时进行，且 UI 相似
+
+# Tips: 一点经验
+
+* 分层：Components + Blocks
+* 测试：Visual Testing 
+* 减少参数，更易用，不要通用的过度自由的 Design System
+
+# How: 如何实现？
+
+* 从已有代码中提取，而不是凭空制造
+* 业务独立
+* 使用简单技术实现

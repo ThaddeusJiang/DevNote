@@ -1,0 +1,11 @@
+created: 20250801051233589
+modified: 20250801051501845
+tags: 
+title: NestJS
+type: text/vnd.tiddlywiki
+
+I don't use NestJS
+
+# 我不喜欢这种基于注解的编程方式，感觉很受束缚，不能自由定义 modules，代码执行顺序混乱，手脚架代码太多。
+# NestJS 必须按照它的风格编写代码，第三方 library 不能开箱即用。
+# NestJS 文档不全

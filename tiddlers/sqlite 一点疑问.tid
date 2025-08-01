@@ -1,0 +1,17 @@
+created: 20250730055333813
+modified: 20250730060324573
+tags: 
+title: sqlite 一点疑问
+type: text/vnd.tiddlywiki
+
+
+将 sqlite db 和 app 放在同一个 server 中，虽然访问速度快，但是 db 和 app 不分离的架构总觉得不够灵活。
+
+假设一个服务有 30万用户，并且已经运行 2年时间。
+
+疑问：
+
+# server 需要多大 disk 和 memory 才能同时支持 db 和 app？没有单独 db scaling 或者 app scaling 的需求吗？
+# 如何做到不停机 db migration ?
+# batch scripts 是否会造成 app 卡顿？
+# 是否存在 app 依赖和 sqlite 依赖冲突，造成无法 grade up？

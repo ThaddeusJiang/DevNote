@@ -1,0 +1,10 @@
+created: 20250801045645860
+modified: 20250801045825796
+title: AshHQ
+type: text/vnd.tiddlywiki
+
+
+Ash 是一个 elixir 框架，通过声明 resource, actions 等内容，能做到更统一的代码实现，对于有很多 developers 参与的项目可能有用。
+
+
+https://www.ash-hq.org/

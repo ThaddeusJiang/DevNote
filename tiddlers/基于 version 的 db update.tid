@@ -1,0 +1,12 @@
+created: 20250712073901269
+modified: 20250712074255920
+tags: 
+title: 基于 version 的 db update
+type: text/vnd.tiddlywiki
+
+
+以前在教科书上都教通过锁来防止 db update 冲突，但是实际生产中锁有很多缺点，最大的缺点就是死锁。
+
+目前很多 db client 都支持基于 version 的 db update，又称 [[Optimistic concurrency control (OCC)]]
+
+

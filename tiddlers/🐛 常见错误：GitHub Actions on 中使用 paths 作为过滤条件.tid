@@ -1,8 +1,9 @@
 created: 20250514063405458
-modified: 20250514063731008
+modified: 20250730043006288
 tags: 
-title: GitHub Actions: 可以指定触发的 paths
+title: 🐛 常见错误：GitHub Actions on 中使用 paths 作为过滤条件
 type: text/vnd.tiddlywiki
+
 
 
 ```yml
@@ -23,3 +24,7 @@ on:
       - vitest.config.ts
       - yarn.lock
 ```
+
+只能在 generator workflows 中使用 `paths` `paths-ignore`
+
+在 test workflows 中使用 paths paths-ignore 可能会造成 pull request checks status 错误，存在 failed pull request 被覆盖成 success 的情况。

@@ -1,0 +1,14 @@
+created: 20211214064119836
+modified: 20250801045606632
+title: OptimisticUpdates
+type: text/vnd.tiddlywiki
+
+乐观更新
+
+不常用、偶尔有用、千万不要过早优化。
+
+最早是在 Apollo GraphQL Client 中学会，React Query 中也有。
+
+相关内容：
+
+* [[乐观锁]]

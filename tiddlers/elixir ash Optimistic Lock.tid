@@ -1,0 +1,22 @@
+created: 20250712074646988
+modified: 20250712074934465
+tags: 
+title: elixir ash Optimistic Lock
+type: text/vnd.tiddlywiki
+
+
+```elixir
+attributes
+    attribute :version, :integer, allow_nil?: false, default: 1
+end
+
+actions
+    update :update do
+        accept [:county, :state]
+        change optimistic_lock(:version)
+    end
+end
+```
+
+
+https://hexdocs.pm/ash/prevent-concurrent-writes.html#add-optimistic-locking

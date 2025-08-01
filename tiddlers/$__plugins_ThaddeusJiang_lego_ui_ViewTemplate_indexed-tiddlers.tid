@@ -1,0 +1,12 @@
+created: 20250801072250616
+modified: 20250801080155303
+tags: $:/tags/ViewTemplate $:/plugins/ThaddeusJiang/lego $:/plugins/ThaddeusJiang/lego/feature
+title: $:/plugins/ThaddeusJiang/lego/ui/ViewTemplate/indexed-tiddlers
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[#Index]]">
+  <$list filter="[all[tiddlers]!is[system]!tag[hide]search:title<currentTiddler>sort[title]!title<currentTiddler>]">
+    <$link to={{!!title}}><$view field="title"/></$link>
+    {{||$:/core/ui/ViewTemplate/tags}}
+  </$list>
+</$list>

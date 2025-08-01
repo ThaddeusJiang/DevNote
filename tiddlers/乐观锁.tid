@@ -1,0 +1,9 @@
+created: 20250801045611207
+modified: 20250801045641432
+title: 乐观锁
+type: text/vnd.tiddlywiki
+
+
+Prisma 有乐观锁，通过 `version` 实现。
+
+AshHQ 也有类似概念。

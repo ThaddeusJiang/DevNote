@@ -1,0 +1,17 @@
+created: 20250730042134693
+modified: 20250730042308177
+tags: 
+title: Vitest 测试 Date
+type: text/vnd.tiddlywiki
+
+
+```js
+const date = new Date (2025, 11, 19)
+
+vi.useFakeTimers() 
+vi.setSystemTime(date)
+
+expect(Date.now()).toBe(date.value0f())
+
+vi.useRealTimers()
+```

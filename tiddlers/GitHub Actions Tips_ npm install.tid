@@ -1,0 +1,22 @@
+created: 20250514065843488
+modified: 20250730064743426
+tags: 
+title: GitHub Actions Tips: npm install
+type: text/vnd.tiddlywiki
+
+
+`uses: bahmutov/npm-install@v1` 自带缓存，无需额外配置
+
+```yml
+jobs:
+  lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: bahmutov/npm-install@v1        
+```
+
+https://github.com/bahmutov/npm-install

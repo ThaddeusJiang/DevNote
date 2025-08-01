@@ -1,0 +1,14 @@
+created: 20250731060056507
+modified: 20250731060312943
+tags: 
+title: docker run app --rm
+type: text/vnd.tiddlywiki
+
+
+```sh
+docker compose run --rm app bash -c "rails db:setup"
+```
+
+* 不使用 --rm 会造成 orphan containers
+* docker exec 必须保证 container 已启动，需要先 docker run
+ 

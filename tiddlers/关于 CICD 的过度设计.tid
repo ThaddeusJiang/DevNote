@@ -1,0 +1,25 @@
+created: 20250730023528077
+modified: 20250730024414174
+tags: 
+title: 关于 CICD 的过度设计
+type: text/vnd.tiddlywiki
+
+
+我见过很多 docker CICD 都设计的非常复杂，认真想想，大多数都是过度设计。
+
+
+1. dev stag prod 使用不同的 Container Registry
+
+> 没必要。
+
+# 不同的 Container Registry 需要不同的权限，配置环境变量配到死
+
+
+2. 发布 dev stag prod 时重复 build
+
+> 重复，CICD 运行时间长
+
+# 其实可以在 Git push 时就直接 build ，可以极大缩短 CICD 运行时间
+
+
+

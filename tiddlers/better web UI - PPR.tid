@@ -1,0 +1,13 @@
+created: 20250801033443910
+modified: 20250801033859395
+tags: 
+title: better web UI - PPR
+type: text/vnd.tiddlywiki
+
+Partial Pre-rendering 
+
+https://nextjs.org/docs/app/getting-started/partial-prerendering
+
+[img[vercel-ppr.webp]]
+
+[img[web-PPR-flow.webp]]

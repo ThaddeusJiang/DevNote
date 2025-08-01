@@ -1,0 +1,14 @@
+created: 20250605050927114
+modified: 20250801044019578
+tags: 
+title: DDD domain 常见的错误
+type: text/vnd.tiddlywiki
+
+
+DDD domain 实践中常见的错误
+
+# 错误将 Database table 当成 domain
+# 过度坚持 domain 的独立性，为了追求书本上的概念，导致糟糕的开发体验
+# domain 到 code 没有合理抽象和分层，导致大量相似的 domain models，代码冗余。
+
+
