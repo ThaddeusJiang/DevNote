@@ -1,0 +1,12 @@
+created: 20250806023546431
+modified: 20250806023839135
+tags: 
+title: URQL
+type: text/vnd.tiddlywiki
+
+urql is a GraphQL Client.
+
+
+```
+npm install urql graphql
+```

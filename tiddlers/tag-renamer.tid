@@ -1,0 +1,33 @@
+created: 20230627095431301
+modified: 20250804060528583
+new: 
+old: TiddlyWiki
+tags: tw5-lego
+title: tag-renamer
+type: text/vnd.tiddlywiki
+
+Old tag: <$edit-text tiddler=<<currentTiddler>> field="old" placeholder="old tag"/>
+
+New tag <$edit-text tiddler=<<currentTiddler>> field="new" placeholder="new tag" />
+
+<$button>rename
+
+<$list filter="[tag{!!old}]" variable="item">
+
+<$action-listops $tiddler=<<item>> $tags="+[append{!!new}]" />
+
+<$action-listops $tiddler=<<item>> $tags="+[remove{!!old}]"/>
+
+</$list>
+
+</$button>
+
+!! Results:
+
+old
+
+<<list-links filter:"[tag{!!old}]" >>
+
+new
+
+<<list-links filter:"[tag{!!new}]" >>

@@ -1,0 +1,13 @@
+created: 20250804060033005
+modified: 20250804060243231
+tags: 
+title: actions/setup-node 自带缓存
+type: text/vnd.tiddlywiki
+
+
+```yml
+- uses: actions/setup-node@v4
+  with: 
+    node-version: "22"
+    cache: "pnpm"
+```

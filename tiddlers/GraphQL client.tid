@@ -1,13 +1,10 @@
 created: 20250430032227049
-modified: 20250430032624891
+modified: 20250806023745563
 tags: 
 title: GraphQL client
 type: text/vnd.tiddlywiki
 
-> 2025-04-30 我使用 URQL  https://nearform.com/open-source/urql/docs/basics/typescript-integration/
-
-[img[URQL.png]]
-
+> 2025-04-30 我使用 [[URQL]] 
 
 理由：
 
