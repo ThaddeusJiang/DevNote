@@ -1,0 +1,17 @@
+created: 20250824182119757
+modified: 20250824182301705
+tags: 
+title: Elixir Map
+type: text/vnd.tiddlywiki
+
+
+```elixir
+map  = %{"name" => , "age" => }
+
+Map.get(map, "name")
+map["map"]
+
+Map.put(map, "age", 33)
+
+updated = %{map | "age" => 33}
+```

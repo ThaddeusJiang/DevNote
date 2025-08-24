@@ -1,0 +1,29 @@
+created: 20250806041531945
+modified: 20250806043407139
+tags: 
+title: Elixir 短函数
+type: text/vnd.tiddlywiki
+
+> elixir 短函数的优势，没有起名困扰，point-free 风格，代码更短、更优美
+
+使用 `&()` `&1 &2` `&String.upcase/1` 写短函数，
+
+```elixir
+Enum.map(["hello", "world"], &String.upcase/1)
+
+```
+
+
+```elixir
+Enum.sort_by([2, 3, 1], &(&1), &>/2)
+[1, 2, 3]
+
+Enum.sort_by([2, 3, 1], &(&1), :desc)
+[3, 2, 1]
+```
+
+* &() 表示这是一个匿名函数
+* &1 &2 第几个参数
+* &>/2 有两个参数的函数 `>` 是函数名 `/2` 有两个参数，等价于 `fn x, y → x > y end`
+
+

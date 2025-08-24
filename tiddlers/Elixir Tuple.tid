@@ -1,0 +1,14 @@
+created: 20250824182602226
+modified: 20250824182708381
+tags: 
+title: Elixir Tuple
+type: text/vnd.tiddlywiki
+
+
+
+```elixir
+tuple = {"Alice", 30}
+name = elem(tuple, 0)
+
+updated = put_elem(tuple, 1, 31)
+```

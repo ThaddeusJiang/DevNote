@@ -1,0 +1,12 @@
+created: 20250824181043453
+modified: 20250824181104416
+tags: 
+title: prisma
+type: text/vnd.tiddlywiki
+
+
+prisma pull
+
+prisma migrate
+
+prisma push

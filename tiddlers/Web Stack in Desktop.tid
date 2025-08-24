@@ -1,0 +1,16 @@
+created: 20250824033107158
+modified: 20250824033853633
+tags: TechRadar TechRadar/语言&框架
+title: Web Stack in Desktop
+type: text/vnd.tiddlywiki
+
+我期待 ElixirKit https://github.com/livebook-dev/livebook/tree/main/elixirkit
+
+
+
+我认为将 web stack code 编译成 native code 的做法并不好，因为这样会过度依赖 framework 对 native platform 的支持，如果 framework 对 native platform 支持不好，这就是误解的。
+
+并且我也觉得使用一份代码编译成不同的二进制的做法不好， 一份代码到处运行更好。
+
+
+https://deepwiki.com/search/-livebook-web-app-macos-applic_b78a396a-c5af-4568-b82e-f11b2e7a21c7

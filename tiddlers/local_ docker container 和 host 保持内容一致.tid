@@ -1,0 +1,13 @@
+created: 20250818073637578
+modified: 20250818075356711
+tags: 
+title: local: docker container 和 host 保持内容一致
+type: text/vnd.tiddlywiki
+
+
+```yaml
+services:
+  myapp:
+    volumes:
+      - .:/myapp
+```

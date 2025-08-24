@@ -1,0 +1,19 @@
+created: 20250812085947324
+modified: 20250812090733093
+tags: [[2025 值得关注]]
+title: local-first app 必须实现“秒开”
+type: text/vnd.tiddlywiki
+
+
+
+我认为 local-first app 需要实现的几个特性
+
+# 断网使用
+# 多设备同步
+# 秒开
+
+断网使用和多设备同步都是小特性，秒开才是关键，尤其是个人数据软件，随着数据量越来越大，秒开真的让人体验太棒了。
+
+尤其是 local first app 。如果 local first app 依然有像 web app 一样的漫长的 loading 状态，那只能说技术不强。
+
+https://lofi.so/

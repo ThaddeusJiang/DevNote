@@ -1,0 +1,35 @@
+created: 20250808070940781
+modified: 20250808071745481
+tags: 
+title: docker compose -f 双开
+type: text/vnd.tiddlywiki
+
+
+```yml
+docker compose -f docker-compose.yml -f docker-compose.linux.yml up -d
+```
+
+后面的文件会覆盖前面文件中相同部分的配置。
+
+docker-compose.linux.yml
+
+```yml
+services:
+  proxy:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  app:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  sidekiq:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+```
+
+* `extra_hosts`：为容器内的 ‎`/etc/hosts` 文件添加额外的主机名映射。
+* ‎`host-gateway` 是 Docker 的一个特殊关键字，会自动解析为宿主机的网关地址。
+
+
+如果没有这项配置，容器内默认无法直接通过主机名访问宿主机。
+这段配置让每个服务都能通过 ‎`host.docker.internal` 访问宿主机，非常适合本地开发。
+

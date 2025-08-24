@@ -1,0 +1,8 @@
+created: 20250808015842972
+modified: 20250808015956662
+tags: 
+title: server-side client-side ENV 大不同
+type: text/vnd.tiddlywiki
+
+
+server-side ENV 可以是 private 的，但是 client-side ENV 肯定是 public 的。

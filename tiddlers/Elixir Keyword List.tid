@@ -1,0 +1,15 @@
+created: 20250824182427031
+modified: 20250824182600083
+tags: 
+title: Elixir Keyword List
+type: text/vnd.tiddlywiki
+
+
+```elixir
+keyword_list = [name: "Alice", age: 30]
+
+Keyword.get(keyword_list, :name) 
+keyword_list[:name]
+
+Keyword.put(keyword_list, :age, 32)
+```

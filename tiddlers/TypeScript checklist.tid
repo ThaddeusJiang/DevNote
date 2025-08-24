@@ -1,0 +1,9 @@
+created: 20250808121935723
+modified: 20250808122111565
+tags: 
+title: TypeScript checklist
+type: text/vnd.tiddlywiki
+
+
+# 我不喜欢使用 Classes 作为类型
+# 我不喜欢混淆数据和类型，Data is data, Type is type.

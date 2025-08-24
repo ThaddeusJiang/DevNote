@@ -1,0 +1,9 @@
+created: 20250824180245951
+modified: 20250824180414201
+tags: [[What I can do]]
+title: GitHub Actions
+type: text/vnd.tiddlywiki
+
+
+
+* reusable actions, reusable workflows, vars, if, workflow_call

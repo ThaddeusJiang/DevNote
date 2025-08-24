@@ -1,0 +1,16 @@
+created: 20250808123001594
+modified: 20250808123228602
+tags: TechRadar/放弃
+title: Sass-lang
+type: text/vnd.tiddlywiki
+
+如果可以拒绝，我肯定不会使用 Sass
+
+理由：
+
+# 没必要，为什么不用 tailwindcss ?
+# 没必要，为什么不用 CSS？
+
+Sass 需要依赖才能使用，配置和维护都是成本，学习也是成本。
+
+https://sass-lang.com/

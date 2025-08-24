@@ -1,0 +1,12 @@
+created: 20250824181229027
+modified: 20250824181603277
+tags: 
+title: container Tips: 不要使用通用名称 app, data
+type: text/vnd.tiddlywiki
+
+
+
+```diff
+- WORKDIR /app
++ WORKDIR /myapp
+```

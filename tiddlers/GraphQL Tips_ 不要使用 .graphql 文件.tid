@@ -1,13 +1,16 @@
 created: 20250501024534541
-modified: 20250501025004240
+modified: 20250806025028792
 tags: 
-title: GraphQL Tips: 不使用 .graphql 文件
+title: GraphQL Tips: 不要使用 .graphql 文件
 type: text/vnd.tiddlywiki
 
 
-我的经验：直接在 GraphQL 被调用的文件中编写 graphql 更好
+我的经验：直接在代码中编写 graphql 比编写 .graphql 文件更好。
 
-在 js/ts 项目中引入 .graphql 文件需要额外配置，且 editor 通常不能自动补全。不如直接使用 string 编写 graphql，代码如下：
+在 js/ts 项目中引入 .graphql 文件需要额外配置，且 editor 通常不能自动补全。
+不如直接使用 string 编写 graphql。
+
+例子：
 
 ```js
 const allFilmsWithVariablesQueryDocument = graphql(/* GraphQL */ `

@@ -1,0 +1,14 @@
+created: 20250818042021132
+modified: 20250818042557060
+tags: TJ_REC
+title: 再推荐 grep.app
+type: text/vnd.tiddlywiki
+
+
+当你对某段代码有犹豫时，不妨试试使用 http://grep.app 可以看看其他项目都是怎么做的。
+有时候看到其他开发者也采用相同的代码，会有一点点安心😌
+
+
+[img[https://i.gyazo.com/8ba106b37665ea0a748db1194ac3ec17.png]]
+
+https://grep.app/search?q=$%7B%7B+secrets.sentry_dsn+%7D%7D

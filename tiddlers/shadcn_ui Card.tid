@@ -1,0 +1,24 @@
+created: 20250824183121148
+modified: 20250824183513300
+tags: 
+title: shadcn/ui Card
+type: text/vnd.tiddlywiki
+
+
+```jsx
+<Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+    <CardAction>Card Action</CardAction>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
+```
+
+https://ui.shadcn.com/docs/components/card

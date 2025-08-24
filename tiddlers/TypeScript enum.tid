@@ -1,6 +1,6 @@
 created: 20250507040104214
-modified: 20250612022650229
-tags:
+modified: 20250808121921964
+tags: 
 title: TypeScript enum
 type: text/vnd.tiddlywiki
 
@@ -18,8 +18,7 @@ type Direction = typeof ODirection[keyof typeof ODirection];
 function run(dir: Direction) {}
 ```
 
-我认为 `type Direction = typeof ODirection[keyof typeof ODirection];` 是类型体操，不容易理解也不容易编写。
+我认为 `type Direction = typeof ODirection[keyof typeof ODirection]` 是类型体操，不容易理解也不容易编写。
 
-因为我的 JS 项目中一定会有 zod.dev ，所以我用 Zod enums。
+我学会了一种 [[TypeScript enum 超酷定义]]
 
-[[Zod enum]]

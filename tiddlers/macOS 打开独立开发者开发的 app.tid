@@ -1,0 +1,10 @@
+created: 20250808051648276
+modified: 20250808051724648
+tags: 
+title: macOS 打开独立开发者开发的 app
+type: text/vnd.tiddlywiki
+
+
+```
+sudo xattr -d com.apple.quarantine /Applications/app-name
+```
