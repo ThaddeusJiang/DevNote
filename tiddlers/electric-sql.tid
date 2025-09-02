@@ -1,7 +1,23 @@
 created: 20250318150240028
-modified: 20250318150620526
+modified: 20250825051012935
+tags: [[local first data stack]]
 title: electric-sql
 type: text/vnd.tiddlywiki
+
+<<<.tc-big-quote
+electric-sql 值得期待。
+
+* 不需要破坏已有 database，只是一个插件，随插即用。
+* 开发团队对 localfirst 理解很深，甚至开发出 pglite 允许运行 Embeddable Postgres 
+* 支持多种 clients，JS, Elixir 都可以
+<<<
+
+
+
+
+
+
+
 
 基于 Postgres 的同步引擎，https://electric-sql.com/
 

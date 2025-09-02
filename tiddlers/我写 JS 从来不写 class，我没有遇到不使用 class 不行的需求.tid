@@ -1,0 +1,26 @@
+created: 20250825040236213
+modified: 20250825040454309
+tags: 
+title: 我写 JS 从来不写 class，我没有遇到不使用 class 不行的需求
+type: text/vnd.tiddlywiki
+
+
+My Style (JS Style)
+
+```js
+interface Product { ... }
+
+const modified = { ...product, ...productArgs }
+return await this.productRepository.update(modified)
+```
+
+Java Style
+
+```js
+export class Product
+    change = (args: ChangeArgs): Product => new Product({ ...this.args, ...args })
+}
+
+const modified = product.change(productArgs)
+return await this.productRepository.update(modified)
+```

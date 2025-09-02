@@ -1,0 +1,12 @@
+created: 20250826021558792
+modified: 20250826022211476
+tags: 
+title: 是否要尝试 Cursor Dev Containers
+type: text/vnd.tiddlywiki
+
+
+现在的问题：人类启动 docker containers 后 Cursor 似乎不能直接进入 containers 内部调试代码，说不定使用  Cursor Dev Containers 可以解决这个问题。
+
+> 直接在 Cursor Extensions 搜索 dev container 更好
+
+ https://containers.dev/

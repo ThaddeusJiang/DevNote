@@ -1,0 +1,18 @@
+created: 20250902100334197
+modified: 20250902100411697
+tags: 
+title: next.config.ts Partial Prerendering (PPR)
+type: text/vnd.tiddlywiki
+
+
+```
+import type { NextConfig } from 'next'
+ 
+const nextConfig: NextConfig = {
+  experimental: {
+    ppr: 'incremental',
+  },
+}
+ 
+export default nextConfig
+```

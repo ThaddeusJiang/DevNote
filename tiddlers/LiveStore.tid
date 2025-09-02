@@ -1,0 +1,75 @@
+created: 20250825052433351
+modified: 20250825052919028
+tags: [[local first data stack]]
+title: LiveStore
+type: text/vnd.tiddlywiki
+
+LiveStore 似乎很棒，但是代码编写方法有点小众，是 `Events describe data changes`
+
+https://docs.livestore.dev/getting-started/react-web/
+
+
+!! Q: 一个 table 就这么复杂，实际项目中怎么搞？复杂关系的 tables 是不是爆炸了？遗漏了怎么办？
+
+从这个角度来说，AshHQ 似乎比 LiveStore 好一点点
+
+```js
+import { Events, makeSchema, Schema, SessionIdSymbol, State } from '@livestore/livestore'
+
+// You can model your state as SQLite tables (https://docs.livestore.dev/reference/state/sqlite-schema)
+export const tables = {
+  todos: State.SQLite.table({
+    name: 'todos',
+    columns: {
+      id: State.SQLite.text({ primaryKey: true }),
+      text: State.SQLite.text({ default: '' }),
+      completed: State.SQLite.boolean({ default: false }),
+      deletedAt: State.SQLite.integer({ nullable: true, schema: Schema.DateFromNumber }),
+    },
+  }),
+  // Client documents can be used for local-only state (e.g. form inputs)
+  uiState: State.SQLite.clientDocument({
+    name: 'uiState',
+    schema: Schema.Struct({ newTodoText: Schema.String, filter: Schema.Literal('all', 'active', 'completed') }),
+    default: { id: SessionIdSymbol, value: { newTodoText: '', filter: 'all' } },
+  }),
+}
+
+// Events describe data changes (https://docs.livestore.dev/reference/events)
+export const events = {
+  todoCreated: Events.synced({
+    name: 'v1.TodoCreated',
+    schema: Schema.Struct({ id: Schema.String, text: Schema.String }),
+  }),
+  todoCompleted: Events.synced({
+    name: 'v1.TodoCompleted',
+    schema: Schema.Struct({ id: Schema.String }),
+  }),
+  todoUncompleted: Events.synced({
+    name: 'v1.TodoUncompleted',
+    schema: Schema.Struct({ id: Schema.String }),
+  }),
+  todoDeleted: Events.synced({
+    name: 'v1.TodoDeleted',
+    schema: Schema.Struct({ id: Schema.String, deletedAt: Schema.Date }),
+  }),
+  todoClearedCompleted: Events.synced({
+    name: 'v1.TodoClearedCompleted',
+    schema: Schema.Struct({ deletedAt: Schema.Date }),
+  }),
+  uiStateSet: tables.uiState.set,
+}
+
+// Materializers are used to map events to state (https://docs.livestore.dev/reference/state/materializers)
+const materializers = State.SQLite.materializers(events, {
+  'v1.TodoCreated': ({ id, text }) => tables.todos.insert({ id, text, completed: false }),
+  'v1.TodoCompleted': ({ id }) => tables.todos.update({ completed: true }).where({ id }),
+  'v1.TodoUncompleted': ({ id }) => tables.todos.update({ completed: false }).where({ id }),
+  'v1.TodoDeleted': ({ id, deletedAt }) => tables.todos.update({ deletedAt }).where({ id }),
+  'v1.TodoClearedCompleted': ({ deletedAt }) => tables.todos.update({ deletedAt }).where({ completed: true }),
+})
+
+const state = State.SQLite.makeState({ tables, materializers })
+
+export const schema = makeSchema({ events, state })
+```

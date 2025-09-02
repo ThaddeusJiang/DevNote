@@ -1,0 +1,17 @@
+created: 20250825051809244
+modified: 20250825052000983
+tags: 
+title: realtime Data
+type: text/vnd.tiddlywiki
+
+
+* Elixir LiveView
+
+* Supabase Realtime
+
+* electric-sql
+
+* Firebase Realtime Database
+* PouchDB
+* Realm
+* Replicache

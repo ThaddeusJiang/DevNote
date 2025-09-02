@@ -1,0 +1,58 @@
+created: 20250902092452762
+modified: 20250902093303431
+tags: 
+title: React Server Components
+type: text/vnd.tiddlywiki
+
+
+1. `button` `formAction`
+
+```jsx
+'use server'
+ 
+export async function createPost() {}
+```
+
+```jsx
+'use client'
+ 
+import { createPost } from '@/app/actions'
+ 
+export function Button() {
+  return <button formAction={createPost}>Create</button>
+}
+```
+
+2. `form` `action`
+
+```jsx
+import { createPost } from '@/app/actions'
+ 
+export function Form() {
+  return (
+    <form action={createPost}>
+      <input type="text" name="title" />
+      <input type="text" name="content" />
+      <button type="submit">Create</button>
+    </form>
+  )
+}
+```
+
+```jsx
+'use server'
+ 
+export async function createPost(formData: FormData) {
+  const title = formData.get('title')
+  const content = formData.get('content')
+ 
+  // Update data
+  // Revalidate cache
+}
+```
+
+`useActionState`
+
+```jsx
+  const [state, action, pending] = useActionState(createPost, false)
+```

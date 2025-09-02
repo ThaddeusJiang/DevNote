@@ -1,0 +1,24 @@
+created: 20250902095309467
+modified: 20250902095711184
+tags: 
+title: Next.js Function status
+type: text/vnd.tiddlywiki
+
+
+```js
+'use client'
+
+  const [state, formAction, pending] = useActionState(createUser, initialState)
+
+    <form action={formAction}>
+      <p aria-live="polite">{state?.message}</p>
+      <button disabled={pending}>Sign up</button>
+
+```
+
+```jsx
+'use client'
+
+  const { pending } = useFormStatus()
+
+```

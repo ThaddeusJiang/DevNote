@@ -1,0 +1,10 @@
+created: 20250902094543588
+modified: 20250902094809132
+tags: 2025关注
+title: local first app
+type: text/vnd.tiddlywiki
+
+
+* 所谓 app 而不是 service，我需要普通人可以通过双击打开 app。
+** 不能依赖 docker 
+*** 所以需要 server 的工具不适合，postgres 🆖 pglite 🆗

@@ -1,0 +1,15 @@
+created: 20250902114907422
+modified: 20250902115039574
+tags: 
+title: launchd（macOS 原生工具）
+type: text/vnd.tiddlywiki
+
+`launchd` 是 macOS 原生的 `服务管理` 工具，是 macOS上的默认系统级任务调度和服务管理工具，功能类似于 Linux 的 `systemd` 
+
+
+特点：
+
+* 系统集成：完全原生，最稳定。
+* 开机启动：支持服务的开机启动。
+* 低资源消耗：运行效率高。
+
