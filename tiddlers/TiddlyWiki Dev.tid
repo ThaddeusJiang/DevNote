@@ -1,0 +1,15 @@
+created: 20250907040203726
+modified: 20250907040955029
+tags: 
+title: TiddlyWiki Dev
+type: text/vnd.tiddlywiki
+
+
+寻找适合我自己的 TiddlyWiki Dev 工具
+
+需求：
+
+我希望 [[TiddlyWiki Quite|https://tiddlywiki.com/#Quine]] 的设计，我自己大部分时间都是直接在 Wiki mode 编写代码，我不喜欢太过于工程化的 TiddlyWiki 开发工具。
+
+不能过分割裂 Wiki 和 Code，最好可以直接在 Wiki mode 中写代码。所以我无法适应TiddlyWiki 中文社区在使用  [[Modern.TiddlyDev |https://github.com/tiddly-gittly/Modern.TiddlyDev]]
+

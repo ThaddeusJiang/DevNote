@@ -1,0 +1,61 @@
+created: 20250905080546814
+modified: 20250905082527146
+tags: 
+title: My CSS
+type: text/vnd.tiddlywiki
+
+
+
+
+
+input width: 
+
+```css
+input {
+  max-width: var(--container-xs); 
+  // --container-xs: 20rem
+}
+```
+
+main form width: 
+
+```css
+  max-width: var(--container-3xl) /* 48rem = 768px */;
+
+  w-full max-w-2xl /* --container-2xl: 42rem */
+```
+
+biggest UI
+
+```
+max-width: calc(var(--breakpoint-2xl) + 2rem);
+
+// --breakpoint-2xl: 96rem; 1536px
+```
+
+sidebar-width: 
+
+```css
+.w-\(--sidebar-width\) {
+    width: var(--sidebar-width); 
+    // --sidebar-width: 16rem
+}
+```
+
+right panel
+
+```css
+w-72
+```
+
+card style
+
+```css
+<div class="relative flex flex-col gap-2 rounded-lg p-6">
+  ...
+  <a href="class="absolute inset-0"><span class="sr-only">Deploy to Vercel</span></a>
+</>
+```
+
+
+

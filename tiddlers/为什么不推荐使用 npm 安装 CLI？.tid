@@ -1,0 +1,12 @@
+created: 20250903015412166
+modified: 20250903015759790
+tags: 
+title: 为什么不推荐使用 npm 安装 CLI？
+type: text/vnd.tiddlywiki
+
+
+因为当 npm 版本变更时，通过 npm 安装的 cli 就会失效，只有在当前 npm 版本中安装过的 cli 才能使用。
+
+使用 npm 的开发者都明白，不同的项目中 node.js/npm 版本通常都是不同的，切换 npm version 时非常频繁的行为。
+
+使用 brew 安装，没有这个问题。
