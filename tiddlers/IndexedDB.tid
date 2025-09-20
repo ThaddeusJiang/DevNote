@@ -1,0 +1,15 @@
+created: 20250920070104330
+modified: 20250920070438109
+tags: TechRadar/放弃
+title: IndexedDB
+type: text/vnd.tiddlywiki
+
+imo: IndexedDB 不值得继续投资
+
+如今这个时代允许嵌入到浏览器的存储方式太多了，SQLite 和 PGLite 都可以，IndexedDB 在 server-side 不是主流，不是一个简单的方案。
+今后直接在 browser 中使用 SQLite / PGlite 更好。
+
+2025-09-20
+
+我发现 TinyBase 很好用，能实现 browser 中持久化，支持 client-server 数据同步，支持 key-value 存储，很棒。还有其他很多优点。
+

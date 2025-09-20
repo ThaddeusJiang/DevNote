@@ -1,27 +1,28 @@
 created: 20230221001904248
 creator: TJ
-modified: 20250907052914186
+modified: 20250920073124560
 modifier: TJ
 tags: 
 title: Welcome
 type: text/vnd.tiddlywiki
 
-👋 嗨，我是 TJ (thaddeus jiang)
+👋 嗨，我是 TJ (Thaddeus Jiang)
 
-欢迎来到我的 Dev Notes
+欢迎来到我的数字花园。
 
-本笔记使用 TiddlyWiki 构建，已开源 https://github.com/ThaddeusJiang/public-dev-notes ，欢迎 Star ⭐。
+使用 TiddlyWiki 构建，它可以实现 100年后依然可用。你也值得拥有，访问 https://github.com/ThaddeusJiang/digital-garden
 
-* 链接 404，请使用 `Shift + ^ + A` 检索
-* 探讨问题，请在 Discussions 开启讨论
-* 发现错误，请在 Issues 提交反馈
+''FAQ''
 
-其他链接
+* 连接失效，使用全文检索 `Shift + ^ + A` 
+* 探讨问题，前往 https://github.com/ThaddeusJiang/digital-garden/Discussions 
+* 发现错误，前往 https://github.com/ThaddeusJiang/digital-garden/Issues 
 
-* 代码 [[ThaddeusJiang's GitHub|https://github.com/ThaddeusJiang]]
+''其他链接''
+
 * 博客 [[ThaddeusJiang's Blog|https://thaddeusjiang.com]]
+* 代码 [[ThaddeusJiang's GitHub|https://github.com/ThaddeusJiang]]
 * 社媒 [[ThaddeusJiang's Twitter|https://twitter.com/ThaddeusJiangzh]]
-
 
 我的出发点是希望能像 [[Xuanwo's Note|https://note.xuanwo.io/]] 分享一些笔记。
 

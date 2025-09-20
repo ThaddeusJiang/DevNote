@@ -1,0 +1,38 @@
+created: 20250828033701207
+icon: TinyBase.svg
+modified: 20250920065030171
+tags: [[local first data stack]] TechRadar/工具
+title: TinyBase
+type: text/vnd.tiddlywiki
+
+
+
+2025-09-20 
+
+认真看了一下 TinyBase 依然觉得很有潜力，而且是我喜欢的类型。值得投入
+
+我的理解
+
+TinyBase 是什么？
+
+* TinyBase 是一个 client-side JS framework
+** state management 能实现非常简单的跨组件、跨页面 state management
+** data sync: 很容易实现数据同步（获取，更新），并且是开箱即用的 [[live update]]
+** local-first 方案很简单
+
+为什么我喜欢？
+
+* 简单，TinyBase 真的很简答，Docs 容易阅读，API 设计的简单易用，和其他技术结合也简单
+
+
+
+
+
+
+# TinyBase 
+
+
+
+总是在推特上看到，感觉有潜力。
+
+https://tinybase.org/

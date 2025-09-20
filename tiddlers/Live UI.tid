@@ -1,0 +1,25 @@
+created: 20250920065037433
+modified: 20250920071452924
+tags: repeated Future
+title: Live UI
+type: text/vnd.tiddlywiki
+
+
+我真的很喜欢 Live UI （可以叫 Realtime，Server-sent Update）
+
+我见过的技术方案
+
+# supabase-js 开箱即用
+# LiveView 也很简单
+
+TinyBase 这种 API 设计我见过好几次了，很喜欢
+
+* [[Dexie.js]] 是这种设计
+
+! Live Update & Data Sync 技术需要解决的问题
+
+# 权限问题：理论上用户只能看到自己能看到的数据，Postgres row level security 可以解决
+# Offline 问题：必须支持 Offline local-first 以及重连后的数据同步，感觉还需要 UI 和 History / Changelog / 的配合
+
+ 
+

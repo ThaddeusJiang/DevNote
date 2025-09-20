@@ -1,0 +1,18 @@
+created: 20250919041259012
+modified: 20250919041416140
+tags: 
+title: Container queries 是现代 CSS 必须掌握的技能
+type: text/vnd.tiddlywiki
+
+tailwindcss container queries 很简单
+
+```html
+<div class="@container">
+  <div class="flex flex-col @md:flex-row">
+    <!-- ... -->
+  </div>
+</div>
+```
+
+https://tailwindcss.com/docs/responsive-design#container-queries
+

@@ -1,7 +1,10 @@
 created: 20220622132816655
-modified: 20230816053632557
-tags: TechRadar TechRadar/语言&框架
+modified: 20250920070926850
+tags: TechRadar/语言&框架
 title: xstate
 type: text/vnd.tiddlywiki
+
+
+xstate 在超级复杂的 UI 中似乎能让代码变得更清晰，能减少 bug，但是我一直没有计划使用，感觉绝大多数项目都不需要引入它，杀鸡焉用牛刀。
 
 [[state machine]]
