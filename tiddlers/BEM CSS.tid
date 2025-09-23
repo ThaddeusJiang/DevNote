@@ -1,10 +1,12 @@
 created: 20250424092128612
-modified: 20250424092335299
+modified: 20250923051105452
 tags: deprecated
 title: BEM CSS
 type: text/vnd.tiddlywiki
 
-> 不建议采用 BEM CSS，请使用 utility-first CSS
+不建议采用 BEM CSS，请使用 utility-first CSS。
+
+当然完全平铺 utility-first CSS 也是不推荐的，推荐采用 daisyUI 进行必要的抽象。
 
 
 https://getbem.com/

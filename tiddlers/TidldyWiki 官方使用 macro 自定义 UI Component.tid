@@ -1,0 +1,34 @@
+created: 20250923045835852
+modified: 20250923050323034
+tags: 
+title: TidldyWiki 官方使用 macro 自定义 UI Component
+type: text/vnd.tiddlywiki
+
+
+例如 `<<.from-version "5.4.2" >>`
+
+```
+\procedure .from-version(version)
+<%if [<version>compare:version:gteq<tf.from-version-reference>] %>
+	<<.from-version-template "doc-from-version doc-from-version-new" "New in v">>
+<%else%>
+	<<.from-version-template "doc-from-version" "Introduced in v">>
+<%endif%>
+\end
+
+```
+
+https://tiddlywiki.com/#%24%3A%2Feditions%2Ftw5.com%2Fversion-macros
+
+```
+<<.warning """The new version of the [[Highlight Plugin]] requires a modern browser that fully supports JavaScript ES6 (released in 2015). The older version is still available as the ''highlight-legacy'' plugin for users who need to use an older browser.""">>
+
+```
+
+```
+\procedure .warning(_:"", title:"Warning", icon:"$:/core/images/warning", class:"doc-warning", iconSize:"22pt")
+<$macrocall $name=".infoBox" text=<<_>> title=<<title>> icon=<<icon>> class=<<class>> iconSize=<<iconSize>>/>
+\end
+```
+
+https://tiddlywiki.com/#%24%3A%2Feditions%2Ftw5.com%2Fdoc-macros

@@ -1,0 +1,16 @@
+created: 20250922051938004
+modified: 20250922052230445
+tags: TechRadar/放弃
+title: Storybook
+type: text/vnd.tiddlywiki
+
+
+
+Storybook 缺点：
+
+# Storybook 的编写方式和实际开发的代码编写方式不同，造成额外负担
+
+!! How to
+
+在项目下创建一个仅 dev 可用的 `/components` 页面，就像正常开发一样。
+

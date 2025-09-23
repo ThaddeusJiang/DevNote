@@ -1,7 +1,7 @@
 created: 20250424093238726
-modified: 20250424093349870
+modified: 20250923050716004
 tags: [[JS Rules]]
-title: 不要使用 class
+title: JS 不需要使用类似 Java 的面对象
 type: text/vnd.tiddlywiki
 
 请思考一下 ES Modules 不够吗？

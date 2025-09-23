@@ -1,11 +1,11 @@
 created: 20250502101220619
-modified: 20250502101457404
+modified: 20250923045656174
 tags: 
-title: TiddlyWiki Macro Widget
+title: TiddlyWiki Macro 🆚 Widget
 type: text/vnd.tiddlywiki
 
 TiddlyWiki 中 Macro 是文本替换，Widget 是动态渲染。
 
 Macro 使用 `<<>>` Widget 使用 `<$ />`
 
-本质上是 WikiText 的文本替换机制，Widget 由 JavaScript 实现。
+Macro 本质上是 WikiText 的文本替换机制，Widget 由 JavaScript 实现。

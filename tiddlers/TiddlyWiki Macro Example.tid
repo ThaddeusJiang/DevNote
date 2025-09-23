@@ -1,5 +1,5 @@
 created: 20250502101508732
-modified: 20250502101534540
+modified: 20250923045749291
 tags: 
 title: TiddlyWiki Macro Example
 type: text/vnd.tiddlywiki
@@ -12,3 +12,6 @@ type: text/vnd.tiddlywiki
 <<myMacro "Hello">>
 
 ```
+
+\procedure 可以
+

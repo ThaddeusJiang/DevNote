@@ -1,5 +1,5 @@
 created: 20250424093356443
-modified: 20250812084524413
+modified: 20250923050823440
 tags: [[JS Rules]]
 title: 不要 export default
 type: text/vnd.tiddlywiki
@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 
 export default 有很多问题：
 
-缺少 Editor 自动补全支持，容易出现命名不一致的问题。
+# 缺少 Editor 自动补全支持，容易出现命名不一致的问题。
 
 例如：
 
@@ -27,5 +27,3 @@ import C from "B"
 
 
 
-
-同样也不需要手动创建 index.js 整理 export

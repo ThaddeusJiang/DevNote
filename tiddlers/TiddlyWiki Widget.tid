@@ -1,12 +1,12 @@
 created: 20230228053253194
-modified: 20250804060531447
+modified: 20250923022740805
 tags: 
 title: TiddlyWiki Widget
 type: text/vnd.tiddlywiki
 
 TiddlyWiki 的 Widget 是用于构建动态和交互式界面的核心组件，运行在 TiddlyWiki 的渲染引擎中。
 
-Widget 以 `$` 开头，macro 以 `<<` 开头 
+Widget 以 `$` 开头，Macro 以 `<<` 开头 
 
 ```
 <$list filter="[tag[TiddlyWiki]sort[title]]"/>
